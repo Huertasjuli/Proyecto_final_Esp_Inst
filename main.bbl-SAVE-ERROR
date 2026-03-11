@@ -1,0 +1,2043 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/apasortcite//global/global/global}
+    \entry{alam2023survey}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=35e3983b993e8cad93810e20bfbded6e}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md.\bibnamedelimi Rokibul},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=614a52d2706443490df49871e9e2f0b2}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Sowmitra},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83f6c1a471761fdd867117e175c76b7f}{%
+           family={Bostami},
+           familyi={B\bibinitperiod},
+           given={Md.\bibnamedelimi Bayejed},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15b9487683cce8730bb9d2188b6ec1ea}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md.\bibnamedelimi Saiful},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d606e5fef8692df7708280dbd7d07d9}{%
+           family={Aadeeb},
+           familyi={A\bibinitperiod},
+           given={Md.\bibnamedelimi Shadman},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f33dea96f47ce7f274726d11b56c40}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={A.\bibnamedelimi K.\bibnamedelimi M.\bibnamedelimi Muzahidul},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b3c0b3496c49f479247f3d0c86bf65f}
+      \strng{fullhash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{fullhashraw}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{bibnamehash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authorbibnamehash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authornamehash}{7b3c0b3496c49f479247f3d0c86bf65f}
+      \strng{authorfullhash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authorfullhashraw}{ceebce438c63b84ec5f09ee66869221d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Survey on IoT Driven Smart Parking Management System: Approaches, Limitations and Future Research Agenda}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{119523\bibrangedash 119543}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2023.3327306
+      \endverb
+    \endentry
+    \entry{aljaleel2022traffic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0c788e8b6e1bd7910ee69086c36e388f}{%
+           family={Al-Jaleel},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65519b317f27576aa4c4c134002c7131}{%
+           family={Al-Sultan},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{fullhash}{50b660503890fdd63a2f738265dc2498}
+      \strng{fullhashraw}{50b660503890fdd63a2f738265dc2498}
+      \strng{bibnamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorbibnamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authornamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorfullhash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorfullhashraw}{50b660503890fdd63a2f738265dc2498}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Traffic and Logistics Engineering}
+      \field{title}{Traffic Capacity Analysis at Entrances and Exits of Universities: A Case Study}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{45\bibrangedash 52}
+      \range{pages}{8}
+    \endentry
+    \entry{aamva_alpr_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4fa9ca5bb4520896b0b3d7f8b8586ed3}{%
+           family={{American Association of Motor Vehicle Administrators (AAMVA)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {AAMVA}%
+      }
+      \strng{namehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{fullhash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{fullhashraw}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{bibnamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorbibnamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authornamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorfullhash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorfullhashraw}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best Practices Guide for Automated License Plate Recognition (ALPR) Systems}
+      \field{type}{techreport}
+      \field{year}{2021}
+    \endentry
+    \entry{bonomi2012fog}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8819a271183f0eabaf267fc5a0147a80}{%
+           family={Bonomi},
+           familyi={B\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f28ee87794044eb2050805f541e58d2e}{%
+           family={Milito},
+           familyi={M\bibinitperiod},
+           given={Rodolfo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c69ee24cd8724f021d157276f708490}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=670224eb6968fc59e29d0fd7faca8a54}{%
+           family={Addepalli},
+           familyi={A\bibinitperiod},
+           given={Sateesh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{95286e8bd1cb521cc485e849bd96b8f7}
+      \strng{fullhash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{fullhashraw}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{bibnamehash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authorbibnamehash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authornamehash}{95286e8bd1cb521cc485e849bd96b8f7}
+      \strng{authorfullhash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authorfullhashraw}{99c098a1719b904a132e1149aacd2ba9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the First Edition of the MCC Workshop on Mobile Cloud Computing}
+      \field{title}{Fog Computing and Its Role in the Internet of Things}
+      \field{year}{2012}
+      \field{pages}{13\bibrangedash 16}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/2342509.2342513
+      \endverb
+    \endentry
+    \entry{candelas2015arduino}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=d45ca851c97bde634a29b7733c47292c}{%
+           family={Candelas\bibnamedelima Herias},
+           familyi={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Francisco\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f72b36ac0e6e9242ba49c21b96b12088}{%
+           family={Garcia\bibnamedelima Gomez},
+           familyi={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Gabriel\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb7d7810b2f82908ce05ab8d23e0b146}{%
+           family={Pomares\bibnamedelima Baeza},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d22e171a3d598162dbd03862e5b71961}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={Carlos\bibnamedelimb A.\bibnamedelimi Jara},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=568afea574a2c32a440a2342ac4ea43d}{%
+           family={Delgado\bibnamedelima Rodriguez},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa35be042760593157c677dc001f0e58}{%
+           family={Mateo\bibnamedelima Agullo},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Carlos\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=432a56a84a1c24a03874d65402f819f3}{%
+           family={Mira\bibnamedelima Martinez},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f348ab83a3d977505f51b1c027e48890}{%
+           family={Perez\bibnamedelima Alepuz},
+           familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de Alicante}%
+      }
+      \strng{namehash}{acfcc956e95702c2aadbc98e1ceac083}
+      \strng{fullhash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{fullhashraw}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{bibnamehash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authorbibnamehash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authornamehash}{acfcc956e95702c2aadbc98e1ceac083}
+      \strng{authorfullhash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authorfullhashraw}{f2ac5df9d751834a917e3a2602efaef8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-84-606-8636-1}
+      \field{journaltitle}{XIII Jornadas de Redes de Investigacion en Docencia Universitaria}
+      \field{langid}{spanish}
+      \field{title}{Experiencias sobre el uso de la plataforma Arduino en practicas de Automatizacion y Robotica}
+      \field{year}{2015}
+      \field{pages}{84\bibrangedash 101}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=5174477
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=5174477
+      \endverb
+    \endentry
+    \entry{celaya2020fog}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=a1ca9b689727c3effc2a9067cacbf714}{%
+           family={Celaya-Echarri},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={Mikel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee974727499ef4ab392707a6d4f61670}{%
+           family={Froiz-Miguez},
+           familyi={F\bibinithyphendelim M\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57aa81f6920a1c0ffde86aaebeef0bfb}{%
+           family={Azpilicueta},
+           familyi={A\bibinitperiod},
+           given={Leyre},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=761e9b31bdb505b111b0dcff1f99f2ac}{%
+           family={Fraga-Lamas},
+           familyi={F\bibinithyphendelim L\bibinitperiod},
+           given={Paula},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=967f683b014389812d96174fb2eae4c8}{%
+           family={Lopez-Iturri},
+           familyi={L\bibinithyphendelim I\bibinitperiod},
+           given={Peio},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8ba2582aded81c1d16c3f25a0d769c8}{%
+           family={Falcone},
+           familyi={F\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e0ec50fb5e7dda458960ef88e1ab920}{%
+           family={Fernandez-Carames},
+           familyi={F\bibinithyphendelim C\bibinitperiod},
+           given={Tiago\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{559f593f70678f7a6535ce4c2c2c3991}
+      \strng{fullhash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{fullhashraw}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{bibnamehash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authorbibnamehash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authornamehash}{559f593f70678f7a6535ce4c2c2c3991}
+      \strng{authorfullhash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authorfullhashraw}{919ac0f56859ba4f97e82629ed2b5621}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Building Decentralized Fog Computing-Based Smart Parking Systems: From Deterministic Propagation Modeling to Practical Deployment}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{117666\bibrangedash 117688}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3004745
+      \endverb
+    \endentry
+    \entry{tinyml2022EdgeImpulse}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=acd8bda0b2c0bf10adbd1498448a9b2b}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={K.\bibnamedelimi D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1d7f8fc07b7262871581132022c67d8}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{fullhash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{fullhashraw}{bec646cd09e42005d16514f82a8a730b}
+      \strng{bibnamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorbibnamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authornamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorfullhash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorfullhashraw}{bec646cd09e42005d16514f82a8a730b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2022 International Conference on Smart Systems and Inventive Technology (ICSSIT)}
+      \field{title}{Real-time embedded machine learning using TinyML and Edge Impulse}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICSSIT53264.2022.9716341
+      \endverb
+    \endentry
+    \entry{edgeimpulseDocs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c855d0c3b5e9bc68fcf48f4e20a93c6}{%
+           family={{Edge Impulse Inc.}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{fullhash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{fullhashraw}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{bibnamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorbibnamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authornamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorfullhash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorfullhashraw}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido el 08 de noviembre de 2025}
+      \field{title}{Edge Impulse Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.edgeimpulse.com
+      \endverb
+      \verb{url}
+      \verb https://docs.edgeimpulse.com
+      \endverb
+    \endentry
+    \entry{efthymiou2017ev}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9451d568b0b67b7700b1a0e2a9f8f618}{%
+           family={Efthymiou},
+           familyi={E\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b78bbb4127cc948ca8cb549e3fe051c}{%
+           family={Chrysostomou},
+           familyi={C\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4e3d66d13a19168db066bc2d8e09f9d}{%
+           family={Morfoulaki},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ad4f85bf33e8a759155fe3216b76ee2}{%
+           family={Aifantopoulou},
+           familyi={A\bibinitperiod},
+           given={Georgia},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19bc086e926423453300b062850b221f}
+      \strng{fullhash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{fullhashraw}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{bibnamehash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authorbibnamehash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authornamehash}{19bc086e926423453300b062850b221f}
+      \strng{authorfullhash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authorfullhashraw}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Transport Research Review}
+      \field{number}{27}
+      \field{title}{Electric vehicles charging infrastructure location: a genetic algorithm approach}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s12544-017-0237-3
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12544-017-0237-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12544-017-0237-3
+      \endverb
+    \endentry
+    \entry{fhwa_traffic_2017}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a4398b95bd3ddd15f22b45d2c92eba7}{%
+           family={{Federal Highway Administration (FHWA)}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Department of Transportation}%
+      }
+      \strng{namehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{fullhash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{fullhashraw}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{bibnamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorbibnamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authornamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorfullhash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorfullhashraw}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Publication No. FHWA-HRT-04-040}
+      \field{title}{Traffic Analysis Toolbox Volume III: Guidelines for Applying Traffic Microsimulation Modeling Software}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{hossain2020embeddedml}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6b0b51648c9acf4b73db38f5961ee3e}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi Shamim},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{fullhash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{fullhashraw}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{bibnamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorbibnamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authornamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorfullhash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorfullhashraw}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Potentials}
+      \field{number}{5}
+      \field{title}{Edge Computing and Embedded Machine Learning: The Future of IoT}
+      \field{volume}{39}
+      \field{year}{2020}
+      \field{pages}{27\bibrangedash 33}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/MPOT.2020.2980444
+      \endverb
+    \endentry
+    \entry{leurent2011mobility}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=71d1284ef90284020e5e4c4d10e1213e}{%
+           family={Leurent},
+           familyi={L\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554375abe1a89dc913149a3266f3a8e2}{%
+           family={Windisch},
+           familyi={W\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{fullhash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{fullhashraw}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{bibnamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorbibnamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authornamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorfullhash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorfullhashraw}{0d971cdb9fba7631166f40049c9587e5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Transport Research Review}
+      \field{number}{64}
+      \field{title}{Triggering the development of electric mobility: a review of public policies}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{221\bibrangedash 235}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s12544-011-0056-3
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12544-011-0056-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12544-011-0056-3
+      \endverb
+    \endentry
+    \entry{macias1996acceso}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=69babc86ee167180b4ec29bcba28aa4e}{%
+           family={Macias\bibnamedelima Aleman},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Victor\bibnamedelima M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{fullhash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{fullhashraw}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{bibnamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorbibnamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authornamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorfullhash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorfullhashraw}{69babc86ee167180b4ec29bcba28aa4e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{84-7723-257-1}
+      \field{journaltitle}{Sistemas de información. Balance de 12 años de jornadas y perspectivas de futuro: actas}
+      \field{langid}{spanish}
+      \field{title}{Automatización del acceso a los recursos documentales en bibliotecas universitarias: el caso de la Universidad de Las Palmas de Gran Canaria}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{pages}{199\bibrangedash 205}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=1339387
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=1339387
+      \endverb
+    \endentry
+    \entry{marshoodulla2024sdiotpark}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a641b91a0d3565c5265bd2d4552b953}{%
+           family={Marshoodulla},
+           familyi={M\bibinitperiod},
+           given={Syeda\bibnamedelima Zeenat},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ffc784b03da9fb337b1c3d4743944a2}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Goutam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{fullhash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{fullhashraw}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{bibnamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorbibnamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authornamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorfullhash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorfullhashraw}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{number}{11}
+      \field{title}{SDIoTPark: A Data Analytics Framework for Smart Parking Using SDN-Based IoT}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{pages}{20030\bibrangedash 20039}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/JIOT.2024.3373133
+      \endverb
+    \endentry
+    \entry{nguyen2023edge}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f0885e071cd2b481bf62f558bb4437}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{fullhash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{fullhashraw}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{bibnamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorbibnamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authornamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorfullhash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorfullhashraw}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Deploying license plate recognition algorithms on edge computing devices}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{15000\bibrangedash 15012}
+      \range{pages}{13}
+    \endentry
+    \entry{olivares2011rfid}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccdd071de40eb862418a26859ec46bdd}{%
+           family={Olivares},
+           familyi={O\bibinitperiod},
+           given={Eric\bibnamedelima Leon},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{fullhash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{fullhashraw}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{bibnamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorbibnamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authornamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorfullhash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorfullhashraw}{ccdd071de40eb862418a26859ec46bdd}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1405-5597}
+      \field{journaltitle}{Conciencia Tecnológica}
+      \field{langid}{spanish}
+      \field{number}{42}
+      \field{title}{Estacionamiento Automatizado con Tecnología RFID}
+      \field{year}{2011}
+      \field{pages}{71\bibrangedash 73}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=3832418
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=3832418
+      \endverb
+    \endentry
+    \entry{oloriz2022certificacion}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7c2112f4a30a13d92f11c578491f0531}{%
+           family={Oloriz},
+           familyi={O\bibinitperiod},
+           given={Mario\bibnamedelima Guillermo},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f82ac97d9f7d2d099a92afb66e6d1973}{%
+           family={Rissi},
+           familyi={R\bibinitperiod},
+           given={Matilde},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5279e6c22956185e19dfba9cd8753d2}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={Juan\bibnamedelimb Manuel\bibnamedelima Ramirez},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13008329f13b3693c72b0241c5e38a41}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Maria\bibnamedelima Rosana},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2444621216213c9560f76bb3965f00b}
+      \strng{fullhash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{fullhashraw}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{bibnamehash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authorbibnamehash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authornamehash}{f2444621216213c9560f76bb3965f00b}
+      \strng{authorfullhash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authorfullhashraw}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0719-6245}
+      \field{journaltitle}{Revista Academia \& Negocios (RAN)}
+      \field{langid}{spanish}
+      \field{number}{16}
+      \field{title}{La automatización de la certificación de títulos universitarios en Argentina como garantía del derecho al acceso a la información pública y la mejora en el uso de recursos}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{pages}{155\bibrangedash 162}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9385236
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9385236
+      \endverb
+    \endentry
+    \entry{satyanarayanan2017edge}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dad1fb554e5e561ff7cc2cab41c4bd71}{%
+           family={Satyanarayanan},
+           familyi={S\bibinitperiod},
+           given={Mahadev},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{fullhash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{fullhashraw}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{bibnamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorbibnamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authornamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorfullhash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorfullhashraw}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer}
+      \field{number}{1}
+      \field{title}{The Emergence of Edge Computing}
+      \field{volume}{50}
+      \field{year}{2017}
+      \field{pages}{30\bibrangedash 39}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MC.2017.9
+      \endverb
+    \endentry
+    \entry{subash2025ev}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=aee657ec8493896b2c6e982e94e9bb44}{%
+           family={Subash},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f632415115bfb43554e590e1a61332c2}{%
+           family={Narmadhai},
+           familyi={N\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{fullhash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{fullhashraw}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{bibnamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorbibnamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authornamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorfullhash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorfullhashraw}{eef5a9f27623b2c93301639d458bfb0d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Energy Research}
+      \field{title}{Optimal location for electric vehicle charging station using multiobjective assessment method}
+      \field{volume}{12}
+      \field{year}{2025}
+      \field{pages}{36\bibrangedash 49}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s42108-025-00376-2
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s42108-025-00376-2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s42108-025-00376-2
+      \endverb
+    \endentry
+    \entry{valeo2020patentes}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d758eaa6c350d5cb9f8e7157c37af55c}{%
+           family={Valeo},
+           familyi={V\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ec41816bb55f122b38e4aa5f2083e5}{%
+           family={Gregoracci},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7344a3c2f658ac731d1f02b1d3f2bc3d}{%
+           family={Seijas},
+           familyi={S\bibinitperiod},
+           given={Leticia\bibnamedelima Maria},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=417d266dd7cb9731079ea5d42b9b041a}{%
+           family={Etcheverry},
+           familyi={E\bibinitperiod},
+           given={Juan\bibnamedelima Alberto},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8aa2729bc3561ac671c637ee888d2ce5}
+      \strng{fullhash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{fullhashraw}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{bibnamehash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authorbibnamehash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authornamehash}{8aa2729bc3561ac671c637ee888d2ce5}
+      \strng{authorfullhash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authorfullhashraw}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2525-0159}
+      \field{journaltitle}{Investigación en la Enseñanza de la Electrónica}
+      \field{langid}{spanish}
+      \field{number}{2}
+      \field{title}{Sistema automatizado de estacionamiento para patentes argentinas}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{pages}{107\bibrangedash 113}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7750810
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7750810
+      \endverb
+    \endentry
+    \entry{warden2020tinyml}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cfc28a19549f0d8ff117cf79be90d213}{%
+           family={Warden},
+           familyi={W\bibinitperiod},
+           given={Pete},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=131336c50827334ae58ae71b5107861a}{%
+           family={Situnayake},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{fullhash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{fullhashraw}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{bibnamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorbibnamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authornamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorfullhash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorfullhashraw}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781492052043}
+      \field{title}{TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers}
+      \field{year}{2020}
+    \endentry
+    \entry{zheng2025iot}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b264824924707a32728ba83d92cb219d}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Xiaoxia},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=190808975cb26cd0ab2fcaf3b5d59531}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Wenxi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc9736b40ca170d1b1ff5b2a9bb2545b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edeee9fcf0f8d48d3bdc067a0c3ca52d}{%
+           family={Huhemandula},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d96f8ddeb9c6512275e990bcc1ed266}
+      \strng{fullhash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{fullhashraw}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{bibnamehash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authorbibnamehash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authornamehash}{5d96f8ddeb9c6512275e990bcc1ed266}
+      \strng{authorfullhash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authorfullhashraw}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{IoT-Enhanced Smart Parking Management With IncepDenseMobileNet for Improved Classification}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{128838\bibrangedash 128855}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2025.3589468
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{nyt/global//global/global/global}
+    \entry{alam2023survey}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=35e3983b993e8cad93810e20bfbded6e}{%
+           family={Alam},
+           familyi={A\bibinitperiod},
+           given={Md.\bibnamedelimi Rokibul},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=614a52d2706443490df49871e9e2f0b2}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Sowmitra},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=83f6c1a471761fdd867117e175c76b7f}{%
+           family={Bostami},
+           familyi={B\bibinitperiod},
+           given={Md.\bibnamedelimi Bayejed},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=15b9487683cce8730bb9d2188b6ec1ea}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={Md.\bibnamedelimi Saiful},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0d606e5fef8692df7708280dbd7d07d9}{%
+           family={Aadeeb},
+           familyi={A\bibinitperiod},
+           given={Md.\bibnamedelimi Shadman},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=03f33dea96f47ce7f274726d11b56c40}{%
+           family={Islam},
+           familyi={I\bibinitperiod},
+           given={A.\bibnamedelimi K.\bibnamedelimi M.\bibnamedelimi Muzahidul},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7b3c0b3496c49f479247f3d0c86bf65f}
+      \strng{fullhash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{fullhashraw}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{bibnamehash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authorbibnamehash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authornamehash}{7b3c0b3496c49f479247f3d0c86bf65f}
+      \strng{authorfullhash}{ceebce438c63b84ec5f09ee66869221d}
+      \strng{authorfullhashraw}{ceebce438c63b84ec5f09ee66869221d}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{A Survey on IoT Driven Smart Parking Management System: Approaches, Limitations and Future Research Agenda}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{119523\bibrangedash 119543}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2023.3327306
+      \endverb
+    \endentry
+    \entry{aljaleel2022traffic}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=0c788e8b6e1bd7910ee69086c36e388f}{%
+           family={Al-Jaleel},
+           familyi={A\bibinithyphendelim J\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=65519b317f27576aa4c4c134002c7131}{%
+           family={Al-Sultan},
+           familyi={A\bibinithyphendelim S\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{fullhash}{50b660503890fdd63a2f738265dc2498}
+      \strng{fullhashraw}{50b660503890fdd63a2f738265dc2498}
+      \strng{bibnamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorbibnamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authornamehash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorfullhash}{50b660503890fdd63a2f738265dc2498}
+      \strng{authorfullhashraw}{50b660503890fdd63a2f738265dc2498}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Traffic and Logistics Engineering}
+      \field{title}{Traffic Capacity Analysis at Entrances and Exits of Universities: A Case Study}
+      \field{volume}{10}
+      \field{year}{2022}
+      \field{pages}{45\bibrangedash 52}
+      \range{pages}{8}
+    \endentry
+    \entry{aamva_alpr_2021}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4fa9ca5bb4520896b0b3d7f8b8586ed3}{%
+           family={{American Association of Motor Vehicle Administrators (AAMVA)}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {AAMVA}%
+      }
+      \strng{namehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{fullhash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{fullhashraw}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{bibnamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorbibnamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authornamehash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorfullhash}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \strng{authorfullhashraw}{4fa9ca5bb4520896b0b3d7f8b8586ed3}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Best Practices Guide for Automated License Plate Recognition (ALPR) Systems}
+      \field{type}{techreport}
+      \field{year}{2021}
+    \endentry
+    \entry{bonomi2012fog}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=8819a271183f0eabaf267fc5a0147a80}{%
+           family={Bonomi},
+           familyi={B\bibinitperiod},
+           given={Flavio},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f28ee87794044eb2050805f541e58d2e}{%
+           family={Milito},
+           familyi={M\bibinitperiod},
+           given={Rodolfo},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c69ee24cd8724f021d157276f708490}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=670224eb6968fc59e29d0fd7faca8a54}{%
+           family={Addepalli},
+           familyi={A\bibinitperiod},
+           given={Sateesh},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{95286e8bd1cb521cc485e849bd96b8f7}
+      \strng{fullhash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{fullhashraw}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{bibnamehash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authorbibnamehash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authornamehash}{95286e8bd1cb521cc485e849bd96b8f7}
+      \strng{authorfullhash}{99c098a1719b904a132e1149aacd2ba9}
+      \strng{authorfullhashraw}{99c098a1719b904a132e1149aacd2ba9}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the First Edition of the MCC Workshop on Mobile Cloud Computing}
+      \field{title}{Fog Computing and Its Role in the Internet of Things}
+      \field{year}{2012}
+      \field{pages}{13\bibrangedash 16}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1145/2342509.2342513
+      \endverb
+    \endentry
+    \entry{candelas2015arduino}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=d45ca851c97bde634a29b7733c47292c}{%
+           family={Candelas\bibnamedelima Herias},
+           familyi={C\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Francisco\bibnamedelima A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f72b36ac0e6e9242ba49c21b96b12088}{%
+           family={Garcia\bibnamedelima Gomez},
+           familyi={G\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Gabriel\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cb7d7810b2f82908ce05ab8d23e0b146}{%
+           family={Pomares\bibnamedelima Baeza},
+           familyi={P\bibinitperiod\bibinitdelim B\bibinitperiod},
+           given={Jorge},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d22e171a3d598162dbd03862e5b71961}{%
+           family={Bravo},
+           familyi={B\bibinitperiod},
+           given={Carlos\bibnamedelimb A.\bibnamedelimi Jara},
+           giveni={C\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=568afea574a2c32a440a2342ac4ea43d}{%
+           family={Delgado\bibnamedelima Rodriguez},
+           familyi={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fa35be042760593157c677dc001f0e58}{%
+           family={Mateo\bibnamedelima Agullo},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Carlos\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=432a56a84a1c24a03874d65402f819f3}{%
+           family={Mira\bibnamedelima Martinez},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Jose\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f348ab83a3d977505f51b1c027e48890}{%
+           family={Perez\bibnamedelima Alepuz},
+           familyi={P\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Javier},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de Alicante}%
+      }
+      \strng{namehash}{acfcc956e95702c2aadbc98e1ceac083}
+      \strng{fullhash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{fullhashraw}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{bibnamehash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authorbibnamehash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authornamehash}{acfcc956e95702c2aadbc98e1ceac083}
+      \strng{authorfullhash}{f2ac5df9d751834a917e3a2602efaef8}
+      \strng{authorfullhashraw}{f2ac5df9d751834a917e3a2602efaef8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-84-606-8636-1}
+      \field{journaltitle}{XIII Jornadas de Redes de Investigacion en Docencia Universitaria}
+      \field{langid}{spanish}
+      \field{title}{Experiencias sobre el uso de la plataforma Arduino en practicas de Automatizacion y Robotica}
+      \field{year}{2015}
+      \field{pages}{84\bibrangedash 101}
+      \range{pages}{18}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=5174477
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=5174477
+      \endverb
+    \endentry
+    \entry{celaya2020fog}{article}{}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=a1ca9b689727c3effc2a9067cacbf714}{%
+           family={Celaya-Echarri},
+           familyi={C\bibinithyphendelim E\bibinitperiod},
+           given={Mikel},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee974727499ef4ab392707a6d4f61670}{%
+           family={Froiz-Miguez},
+           familyi={F\bibinithyphendelim M\bibinitperiod},
+           given={Ivan},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=57aa81f6920a1c0ffde86aaebeef0bfb}{%
+           family={Azpilicueta},
+           familyi={A\bibinitperiod},
+           given={Leyre},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=761e9b31bdb505b111b0dcff1f99f2ac}{%
+           family={Fraga-Lamas},
+           familyi={F\bibinithyphendelim L\bibinitperiod},
+           given={Paula},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=967f683b014389812d96174fb2eae4c8}{%
+           family={Lopez-Iturri},
+           familyi={L\bibinithyphendelim I\bibinitperiod},
+           given={Peio},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8ba2582aded81c1d16c3f25a0d769c8}{%
+           family={Falcone},
+           familyi={F\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5e0ec50fb5e7dda458960ef88e1ab920}{%
+           family={Fernandez-Carames},
+           familyi={F\bibinithyphendelim C\bibinitperiod},
+           given={Tiago\bibnamedelima M.},
+           giveni={T\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{559f593f70678f7a6535ce4c2c2c3991}
+      \strng{fullhash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{fullhashraw}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{bibnamehash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authorbibnamehash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authornamehash}{559f593f70678f7a6535ce4c2c2c3991}
+      \strng{authorfullhash}{919ac0f56859ba4f97e82629ed2b5621}
+      \strng{authorfullhashraw}{919ac0f56859ba4f97e82629ed2b5621}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Building Decentralized Fog Computing-Based Smart Parking Systems: From Deterministic Propagation Modeling to Practical Deployment}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{pages}{117666\bibrangedash 117688}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.3004745
+      \endverb
+    \endentry
+    \entry{tinyml2022EdgeImpulse}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=acd8bda0b2c0bf10adbd1498448a9b2b}{%
+           family={Daniel},
+           familyi={D\bibinitperiod},
+           given={K.\bibnamedelimi D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1d7f8fc07b7262871581132022c67d8}{%
+           family={Ram},
+           familyi={R\bibinitperiod},
+           given={D.\bibnamedelimi S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{fullhash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{fullhashraw}{bec646cd09e42005d16514f82a8a730b}
+      \strng{bibnamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorbibnamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authornamehash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorfullhash}{bec646cd09e42005d16514f82a8a730b}
+      \strng{authorfullhashraw}{bec646cd09e42005d16514f82a8a730b}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2022 International Conference on Smart Systems and Inventive Technology (ICSSIT)}
+      \field{title}{Real-time embedded machine learning using TinyML and Edge Impulse}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ICSSIT53264.2022.9716341
+      \endverb
+    \endentry
+    \entry{edgeimpulseDocs}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=4c855d0c3b5e9bc68fcf48f4e20a93c6}{%
+           family={{Edge Impulse Inc.}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{fullhash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{fullhashraw}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{bibnamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorbibnamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authornamehash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorfullhash}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \strng{authorfullhashraw}{4c855d0c3b5e9bc68fcf48f4e20a93c6}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accedido el 08 de noviembre de 2025}
+      \field{title}{Edge Impulse Documentation}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://docs.edgeimpulse.com
+      \endverb
+      \verb{url}
+      \verb https://docs.edgeimpulse.com
+      \endverb
+    \endentry
+    \entry{efthymiou2017ev}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=9451d568b0b67b7700b1a0e2a9f8f618}{%
+           family={Efthymiou},
+           familyi={E\bibinitperiod},
+           given={Dimitrios},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b78bbb4127cc948ca8cb549e3fe051c}{%
+           family={Chrysostomou},
+           familyi={C\bibinitperiod},
+           given={Katerina},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4e3d66d13a19168db066bc2d8e09f9d}{%
+           family={Morfoulaki},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9ad4f85bf33e8a759155fe3216b76ee2}{%
+           family={Aifantopoulou},
+           familyi={A\bibinitperiod},
+           given={Georgia},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{19bc086e926423453300b062850b221f}
+      \strng{fullhash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{fullhashraw}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{bibnamehash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authorbibnamehash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authornamehash}{19bc086e926423453300b062850b221f}
+      \strng{authorfullhash}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \strng{authorfullhashraw}{9d4196a9b398da53c34ff94d2ebd80ce}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Transport Research Review}
+      \field{number}{27}
+      \field{title}{Electric vehicles charging infrastructure location: a genetic algorithm approach}
+      \field{volume}{9}
+      \field{year}{2017}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s12544-017-0237-3
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12544-017-0237-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12544-017-0237-3
+      \endverb
+    \endentry
+    \entry{fhwa_traffic_2017}{report}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=7a4398b95bd3ddd15f22b45d2c92eba7}{%
+           family={{Federal Highway Administration (FHWA)}},
+           familyi={F\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {U.S. Department of Transportation}%
+      }
+      \strng{namehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{fullhash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{fullhashraw}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{bibnamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorbibnamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authornamehash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorfullhash}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \strng{authorfullhashraw}{7a4398b95bd3ddd15f22b45d2c92eba7}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Publication No. FHWA-HRT-04-040}
+      \field{title}{Traffic Analysis Toolbox Volume III: Guidelines for Applying Traffic Microsimulation Modeling Software}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+    \entry{hossain2020embeddedml}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=f6b0b51648c9acf4b73db38f5961ee3e}{%
+           family={Hossain},
+           familyi={H\bibinitperiod},
+           given={M.\bibnamedelimi Shamim},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{fullhash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{fullhashraw}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{bibnamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorbibnamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authornamehash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorfullhash}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \strng{authorfullhashraw}{f6b0b51648c9acf4b73db38f5961ee3e}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Potentials}
+      \field{number}{5}
+      \field{title}{Edge Computing and Embedded Machine Learning: The Future of IoT}
+      \field{volume}{39}
+      \field{year}{2020}
+      \field{pages}{27\bibrangedash 33}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1109/MPOT.2020.2980444
+      \endverb
+    \endentry
+    \entry{leurent2011mobility}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=71d1284ef90284020e5e4c4d10e1213e}{%
+           family={Leurent},
+           familyi={L\bibinitperiod},
+           given={Fabien},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554375abe1a89dc913149a3266f3a8e2}{%
+           family={Windisch},
+           familyi={W\bibinitperiod},
+           given={Elisabeth},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{fullhash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{fullhashraw}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{bibnamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorbibnamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authornamehash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorfullhash}{0d971cdb9fba7631166f40049c9587e5}
+      \strng{authorfullhashraw}{0d971cdb9fba7631166f40049c9587e5}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{European Transport Research Review}
+      \field{number}{64}
+      \field{title}{Triggering the development of electric mobility: a review of public policies}
+      \field{volume}{3}
+      \field{year}{2011}
+      \field{pages}{221\bibrangedash 235}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/s12544-011-0056-3
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s12544-011-0056-3
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s12544-011-0056-3
+      \endverb
+    \endentry
+    \entry{macias1996acceso}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=69babc86ee167180b4ec29bcba28aa4e}{%
+           family={Macias\bibnamedelima Aleman},
+           familyi={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Victor\bibnamedelima M.},
+           giveni={V\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{fullhash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{fullhashraw}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{bibnamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorbibnamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authornamehash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorfullhash}{69babc86ee167180b4ec29bcba28aa4e}
+      \strng{authorfullhashraw}{69babc86ee167180b4ec29bcba28aa4e}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{84-7723-257-1}
+      \field{journaltitle}{Sistemas de información. Balance de 12 años de jornadas y perspectivas de futuro: actas}
+      \field{langid}{spanish}
+      \field{title}{Automatización del acceso a los recursos documentales en bibliotecas universitarias: el caso de la Universidad de Las Palmas de Gran Canaria}
+      \field{volume}{1}
+      \field{year}{1996}
+      \field{pages}{199\bibrangedash 205}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=1339387
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=1339387
+      \endverb
+    \endentry
+    \entry{marshoodulla2024sdiotpark}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=3a641b91a0d3565c5265bd2d4552b953}{%
+           family={Marshoodulla},
+           familyi={M\bibinitperiod},
+           given={Syeda\bibnamedelima Zeenat},
+           giveni={S\bibinitperiod\bibinitdelim Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5ffc784b03da9fb337b1c3d4743944a2}{%
+           family={Saha},
+           familyi={S\bibinitperiod},
+           given={Goutam},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{fullhash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{fullhashraw}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{bibnamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorbibnamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authornamehash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorfullhash}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \strng{authorfullhashraw}{9d143d1eb1dea811af7a9ed48ed310bf}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Internet of Things Journal}
+      \field{number}{11}
+      \field{title}{SDIoTPark: A Data Analytics Framework for Smart Parking Using SDN-Based IoT}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{pages}{20030\bibrangedash 20039}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/JIOT.2024.3373133
+      \endverb
+    \endentry
+    \entry{nguyen2023edge}{article}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1f0885e071cd2b481bf62f558bb4437}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={D.\bibnamedelimi D.},
+           giveni={D\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{fullhash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{fullhashraw}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{bibnamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorbibnamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authornamehash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorfullhash}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \strng{authorfullhashraw}{d1ff8df263ffc246a95ffca88cd2ffd9}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Deploying license plate recognition algorithms on edge computing devices}
+      \field{volume}{11}
+      \field{year}{2023}
+      \field{pages}{15000\bibrangedash 15012}
+      \range{pages}{13}
+    \endentry
+    \entry{olivares2011rfid}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=ccdd071de40eb862418a26859ec46bdd}{%
+           family={Olivares},
+           familyi={O\bibinitperiod},
+           given={Eric\bibnamedelima Leon},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{fullhash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{fullhashraw}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{bibnamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorbibnamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authornamehash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorfullhash}{ccdd071de40eb862418a26859ec46bdd}
+      \strng{authorfullhashraw}{ccdd071de40eb862418a26859ec46bdd}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1405-5597}
+      \field{journaltitle}{Conciencia Tecnológica}
+      \field{langid}{spanish}
+      \field{number}{42}
+      \field{title}{Estacionamiento Automatizado con Tecnología RFID}
+      \field{year}{2011}
+      \field{pages}{71\bibrangedash 73}
+      \range{pages}{3}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=3832418
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=3832418
+      \endverb
+    \endentry
+    \entry{oloriz2022certificacion}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=7c2112f4a30a13d92f11c578491f0531}{%
+           family={Oloriz},
+           familyi={O\bibinitperiod},
+           given={Mario\bibnamedelima Guillermo},
+           giveni={M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f82ac97d9f7d2d099a92afb66e6d1973}{%
+           family={Rissi},
+           familyi={R\bibinitperiod},
+           given={Matilde},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b5279e6c22956185e19dfba9cd8753d2}{%
+           family={Fernandez},
+           familyi={F\bibinitperiod},
+           given={Juan\bibnamedelimb Manuel\bibnamedelima Ramirez},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=13008329f13b3693c72b0241c5e38a41}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Maria\bibnamedelima Rosana},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2444621216213c9560f76bb3965f00b}
+      \strng{fullhash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{fullhashraw}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{bibnamehash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authorbibnamehash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authornamehash}{f2444621216213c9560f76bb3965f00b}
+      \strng{authorfullhash}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \strng{authorfullhashraw}{5e652a7f2b34f69f3f45fdb46b1ef968}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0719-6245}
+      \field{journaltitle}{Revista Academia \& Negocios (RAN)}
+      \field{langid}{spanish}
+      \field{number}{16}
+      \field{title}{La automatización de la certificación de títulos universitarios en Argentina como garantía del derecho al acceso a la información pública y la mejora en el uso de recursos}
+      \field{volume}{8}
+      \field{year}{2022}
+      \field{pages}{155\bibrangedash 162}
+      \range{pages}{8}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9385236
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=9385236
+      \endverb
+    \endentry
+    \entry{satyanarayanan2017edge}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dad1fb554e5e561ff7cc2cab41c4bd71}{%
+           family={Satyanarayanan},
+           familyi={S\bibinitperiod},
+           given={Mahadev},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{fullhash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{fullhashraw}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{bibnamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorbibnamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authornamehash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorfullhash}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \strng{authorfullhashraw}{dad1fb554e5e561ff7cc2cab41c4bd71}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computer}
+      \field{number}{1}
+      \field{title}{The Emergence of Edge Computing}
+      \field{volume}{50}
+      \field{year}{2017}
+      \field{pages}{30\bibrangedash 39}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1109/MC.2017.9
+      \endverb
+    \endentry
+    \entry{subash2025ev}{article}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=aee657ec8493896b2c6e982e94e9bb44}{%
+           family={Subash},
+           familyi={S\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f632415115bfb43554e590e1a61332c2}{%
+           family={Narmadhai},
+           familyi={N\bibinitperiod},
+           given={N.},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{fullhash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{fullhashraw}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{bibnamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorbibnamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authornamehash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorfullhash}{eef5a9f27623b2c93301639d458bfb0d}
+      \strng{authorfullhashraw}{eef5a9f27623b2c93301639d458bfb0d}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sustainable Energy Research}
+      \field{title}{Optimal location for electric vehicle charging station using multiobjective assessment method}
+      \field{volume}{12}
+      \field{year}{2025}
+      \field{pages}{36\bibrangedash 49}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s42108-025-00376-2
+      \endverb
+      \verb{urlraw}
+      \verb https://link.springer.com/article/10.1007/s42108-025-00376-2
+      \endverb
+      \verb{url}
+      \verb https://link.springer.com/article/10.1007/s42108-025-00376-2
+      \endverb
+    \endentry
+    \entry{valeo2020patentes}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=d758eaa6c350d5cb9f8e7157c37af55c}{%
+           family={Valeo},
+           familyi={V\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c9ec41816bb55f122b38e4aa5f2083e5}{%
+           family={Gregoracci},
+           familyi={G\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7344a3c2f658ac731d1f02b1d3f2bc3d}{%
+           family={Seijas},
+           familyi={S\bibinitperiod},
+           given={Leticia\bibnamedelima Maria},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=417d266dd7cb9731079ea5d42b9b041a}{%
+           family={Etcheverry},
+           familyi={E\bibinitperiod},
+           given={Juan\bibnamedelima Alberto},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{8aa2729bc3561ac671c637ee888d2ce5}
+      \strng{fullhash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{fullhashraw}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{bibnamehash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authorbibnamehash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authornamehash}{8aa2729bc3561ac671c637ee888d2ce5}
+      \strng{authorfullhash}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \strng{authorfullhashraw}{e8ffc52bb5e0b211b3c4031fa8473445}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2525-0159}
+      \field{journaltitle}{Investigación en la Enseñanza de la Electrónica}
+      \field{langid}{spanish}
+      \field{number}{2}
+      \field{title}{Sistema automatizado de estacionamiento para patentes argentinas}
+      \field{volume}{4}
+      \field{year}{2020}
+      \field{pages}{107\bibrangedash 113}
+      \range{pages}{7}
+      \verb{urlraw}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7750810
+      \endverb
+      \verb{url}
+      \verb https://dialnet.unirioja.es/servlet/articulo?codigo=7750810
+      \endverb
+    \endentry
+    \entry{warden2020tinyml}{book}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cfc28a19549f0d8ff117cf79be90d213}{%
+           family={Warden},
+           familyi={W\bibinitperiod},
+           given={Pete},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=131336c50827334ae58ae71b5107861a}{%
+           family={Situnayake},
+           familyi={S\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{fullhash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{fullhashraw}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{bibnamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorbibnamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authornamehash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorfullhash}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \strng{authorfullhashraw}{2db3b8d2efed89ff41fbb2993a3d4419}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781492052043}
+      \field{title}{TinyML: Machine Learning with TensorFlow Lite on Arduino and Ultra-Low-Power Microcontrollers}
+      \field{year}{2020}
+    \endentry
+    \entry{zheng2025iot}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=b264824924707a32728ba83d92cb219d}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Xiaoxia},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=190808975cb26cd0ab2fcaf3b5d59531}{%
+           family={Feng},
+           familyi={F\bibinitperiod},
+           given={Wenxi},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc9736b40ca170d1b1ff5b2a9bb2545b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Ning},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edeee9fcf0f8d48d3bdc067a0c3ca52d}{%
+           family={Huhemandula},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d96f8ddeb9c6512275e990bcc1ed266}
+      \strng{fullhash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{fullhashraw}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{bibnamehash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authorbibnamehash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authornamehash}{5d96f8ddeb9c6512275e990bcc1ed266}
+      \strng{authorfullhash}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \strng{authorfullhashraw}{9d30616da12d5aba99fb13a17bf5ca2e}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{IoT-Enhanced Smart Parking Management With IncepDenseMobileNet for Improved Classification}
+      \field{volume}{13}
+      \field{year}{2025}
+      \field{pages}{128838\bibrangedash 128855}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2025.3589468
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

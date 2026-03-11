@@ -1,45 +1,41 @@
 \documentclass[12pt, letterpaper]{article}
 
-% --- IDIOMA, FUENTES Y MÁRGENES (APA 7) ---
-\usepackage[spanish, es-noquoting]{babel}
+% --- IDIOMA Y MÁRGENES ---
+\usepackage[spanish]{babel}
 \addto\captionsspanish{
   \renewcommand{\tablename}{Tabla}
   \renewcommand{\listtablename}{Índice de Tablas}
 }
+\usepackage[margin=2.54cm]{geometry}
 
-\usepackage[margin=2.54cm]{geometry} % Márgenes APA
-
-% --- INTERLINEADO Y SANGRÍA (APA 7) ---
+% --- INTERLINEADO Y SANGRÍA ---
 \usepackage{setspace}
 \doublespacing
 \usepackage{indentfirst}
 \setlength{\parindent}{1.27cm}
 \setlength{\parskip}{0pt}
 
-% --- BIBLIOGRAFÍA (APA 7) ---
+% --- BIBLIOGRAFÍA ---
 \usepackage{csquotes} 
 \usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
-\addbibresource{referencias.bib} % Tu archivo de referencias
+\addbibresource{referencias.bib}
 
-% --- FORMATO DE TÍTULOS (APA 7 - SIN NUMERACIÓN) ---
-\setcounter{secnumdepth}{0} % Apaga la numeración automática de LaTeX
-
+% --- FORMATO DE TÍTULOS ---
+\setcounter{secnumdepth}{0}
 \usepackage{titlesec}
-% Nivel 1: Centrado y Negrita
 \titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
-% Nivel 2: Alineado a la izquierda y Negrita
 \titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0pt}{}
-% Nivel 3: Alineado a la izquierda, Negrita y Cursiva con punto al final
 \titleformat{\subsubsection}[runin]{\normalfont\normalsize\bfseries\itshape}{}{0pt}{}[.]
 
-% --- PAQUETES PARA TABLAS Y FIGURAS ---
-\usepackage{tabularx} % Para que la tabla se ajuste al ancho de la página
-\usepackage{booktabs} % Para las líneas horizontales bonitas de APA
-\usepackage{float}    % Para que el [H] fije la tabla en su lugar
-\usepackage{graphicx} % Permite insertar imágenes
+% --- PAQUETES DE TABLAS Y MATEMÁTICAS ---
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption} % <--- EL SALVADOR DEL ERROR @makecaption
 
 % =========================================================
-% AQUÍ EMPIEZA EL DOCUMENTO (Nada de texto antes de esto)
+% AQUÍ EMPIEZA EL DOCUMENTO 
 % =========================================================
 \begin{document}
 
@@ -161,6 +157,15 @@ Desarrollar un sistema automatizado de ingreso y salida de vehículos automotore
 \subsection{Pregunta de Investigación}
 ¿De qué manera un sistema embebido basado en redes neuronales ligeras y Edge Computing puede mejorar la eficiencia y trazabilidad del control vehicular en la sede Tintal de la ETITC, reduciendo los costos de infraestructura respecto a los métodos tradicionales?
 
+\section{Alcance y Delimitaciones}
+Para garantizar la viabilidad técnica del desarrollo y la correcta evaluación del prototipo funcional (Producto Mínimo Viable - MVP) dentro de las restricciones de memoria de la plataforma embebida, el alcance inicial del proyecto se delimita de la siguiente manera:
+
+\begin{itemize}
+    \item \textbf{Focalización vehicular:} El sistema de visión artificial y la red neuronal se entrenarán de manera exclusiva para la detección y reconocimiento de \textbf{placas de motocicletas}. Esta delimitación responde a las diferencias morfológicas y geométricas que presentan estas placas frente a las de automóviles convencionales, lo que requiere un enfoque especializado en el \textit{dataset} para asegurar una alta tasa de aciertos en la inferencia local.
+    \item \textbf{Entorno de validación:} Aunque el diseño se proyecta para la Sede Tintal, las pruebas de validación del prototipo se ejecutarán en la Sede Centro de la ETITC, simulando las condiciones de iluminación y distancia requeridas.
+    \item \textbf{Actuación física:} La validación de acceso exitoso se representará mediante una etapa de señalización lumínica (LED de estado), omitiendo la instalación de barreras mecánicas o talanqueras reales durante esta fase de demostración tecnológica.
+\end{itemize}
+
 \section{Marco Teórico}
 
 \subsection{Sistemas de Parqueo Inteligente (Smart Parking)}
@@ -227,7 +232,7 @@ El proyecto propuesto se posiciona en la intersección de \textit{Edge Computing
     \item Diseñar una arquitectura modular y escalable que permita integrar distintos sensores y actuadores sin casarse con un proveedor específico.
 \end{itemize}
 
-\begin{table}[H]
+\begin{table}[!ht]
 \centering
 \caption{Comparativa de enfoques de procesamiento en sistemas inteligentes de parqueo}
 \label{tab:comparativa}
@@ -268,19 +273,22 @@ El propósito metodológico es evaluar la viabilidad técnica de integrar modelo
 \subsection{Correspondencia entre Objetivos, Fases y Actividades}
 Para garantizar la trazabilidad del proyecto, el diseño metodológico se estructura en cuatro fases operativas. Cada fase agrupa una serie de actividades secuenciales diseñadas para dar cumplimiento estricto a los objetivos específicos planteados. La Tabla \ref{tab:metodologia} detalla esta alineación.
 
-\begin{table}[H]
+\begin{table}[!ht]
 \centering
-\caption{Matriz de alineación metodológica: Objetivos, Fases y Actividades}
+\caption{Matriz de alineación metodológica: Objetivos, Fases y Actividades (Actualizada)}
 \label{tab:metodologia}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}p{0.3\columnwidth} >{\raggedright\arraybackslash}p{0.25\columnwidth} X}
 \toprule
 \textbf{Objetivo Específico} & \textbf{Fase Metodológica} & \textbf{Actividades Principales} \\
 \midrule
-1. Implementar validación mediante sensores y redes neuronales embebidas. & Fase 1: Diseño de Arquitectura y Hardware & A1.1 Selección del hardware embebido.\newline A1.2 Diseño de red de sensores de activación.\newline A1.3 Definición de parámetros de captura visual. \\
-2. Desplegar modelo de reconocimiento capaz de activar actuador de potencia. & Fase 2: Modelado TinyML y Potencia & A2.1 Recolección y preprocesamiento de imágenes.\newline A2.2 Entrenamiento del modelo en Edge Impulse.\newline A2.3 Integración de la etapa electrónica de potencia. \\
-3. Diseñar módulo de gestión de trazabilidad segura y confiable. & Fase 3: Trazabilidad Local & A3.1 Programación de lista blanca en memoria.\newline A3.2 Configuración del registro de accesos (logs). \\
-Validación general del sistema frente a variables dependientes. & Fase 4: Pruebas y Evaluación & A4.1 Ejecución de pruebas en entorno controlado.\newline A4.2 Análisis estadístico comparativo (vs. manual). \\
+1. Implementar validación mediante sensores y redes neuronales embebidas. & Fase 1: Diseño de Arquitectura y Hardware & A1.1 Selección de la plataforma embebida.\newline A1.2 Selección de la red de sensores.\newline A1.3 Diseño mecánico y ensamblaje profesional (3D/PCB).\newline A1.4 Propuesta de escalabilidad fotovoltaica. \\
+\midrule
+2. Desplegar modelo de reconocimiento capaz de activar actuador de potencia. & Fase 2: Modelado TinyML y Señalización & A2.1 Estrategia de curaduría y minería de datos masivos.\newline A2.2 Entrenamiento y optimización en Edge Impulse.\newline A2.3 Diseño de la etapa de señalización visual (LED). \\
+\midrule
+3. Diseñar módulo de gestión de trazabilidad segura y confiable. & Fase 3: Implementación de Trazabilidad & A3.1 Configuración de lista blanca en memoria local.\newline A3.2 Registro de eventos y almacenamiento de logs en SD. \\
+\midrule
+Validación general del sistema frente a variables dependientes. & Fase 4: Pruebas, Validación y Evaluación & A4.1 Ejecución de pruebas en entorno controlado (Sede Centro).\newline A4.2 Análisis estadístico comparativo vs. sistema manual. \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -289,7 +297,34 @@ Validación general del sistema frente a variables dependientes. & Fase 4: Prueb
 Esta fase abarca la estructuración física del prototipo, priorizando dispositivos que cumplan con las restricciones de procesamiento en el borde (\textit{Edge Computing}) y garantizando un acabado industrial.
 
 \subsubsection{Actividad 1.1: Selección de la plataforma embebida}
-Para garantizar la viabilidad del procesamiento de imágenes en el borde, se definieron criterios de evaluación específicos para visión artificial y redes neuronales, descartando parámetros de instrumentación convencional que no son críticos para este prototipo. Tras evaluar el costo, la memoria SRAM, el hardware de visión integrado y el soporte nativo para TinyML, se seleccionó el \textbf{ESP32-CAM} frente a alternativas como Arduino Nano 33 BLE y Raspberry Pi. Su integración nativa del sensor OV2640 y su compatibilidad total con \textit{Edge Impulse} lo consolidan como la plataforma idónea.
+Para garantizar la viabilidad del procesamiento de imágenes en el borde, se definieron criterios de evaluación específicos para visión artificial y redes neuronales, descartando parámetros de instrumentación convencional que no son críticos para este prototipo. 
+
+Se evaluaron tres alternativas tecnológicas utilizando una escala cuantitativa de 1 (desempeño bajo) a 5 (desempeño alto), como se detalla en la Tabla \ref{tab:matriz_decision}. Los criterios evaluados fueron:
+\begin{itemize}
+    \item \textbf{Costo de implementación:} Accesibilidad económica para garantizar escalabilidad.
+    \item \textbf{Memoria RAM/PSRAM:} Capacidad para almacenar el \textit{framebuffer} y los tensores del modelo.
+    \item \textbf{Hardware de Visión:} Disponibilidad de cámara integrada para evitar latencia de transmisión.
+    \item \textbf{Soporte TinyML:} Compatibilidad oficial con plataformas como \textit{Edge Impulse}.
+    \item \textbf{Eficiencia Energética:} Consumo de potencia para operar de forma autónoma.
+\end{itemize}
+
+\begin{table}[!ht]
+\centering
+\caption{Matriz de decisión para la selección de la plataforma embebida}
+\label{tab:matriz_decision}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash\bfseries}p{0.22\columnwidth} *{5}{>{\centering\arraybackslash}X} >{\centering\arraybackslash\bfseries}X}
+\toprule
+Plataforma & Costo & Memoria (RAM) & Hardware de Visión & Soporte TinyML & Eficiencia Energética & Puntaje Total \\
+\midrule
+Raspberry Pi 4 & 1 & 5 & 3 & 4 & 2 & 15 \\
+Arduino Nano 33 BLE & 3 & 2 & 2 & 5 & 5 & 17 \\
+ESP32-CAM & 5 & 4 & 5 & 5 & 4 & 23 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+El análisis cuantitativo evidencia que el \textbf{ESP32-CAM} obtiene el mayor puntaje (23 puntos). Su integración nativa del sensor OV2640, su memoria PSRAM externa y su compatibilidad total para exportar librerías desde \textit{Edge Impulse} lo consolidan como la plataforma idónea, superando el alto consumo de la Raspberry Pi y las limitaciones visuales del Arduino Nano.
 
 \subsubsection{Actividad 1.2: Selección de la red de sensores de activación}
 Para evitar que el modelo de \textit{TinyML} procese imágenes continuamente y sature el microcontrolador, se requiere un sensor de proximidad que active la cámara únicamente cuando un vehículo esté en posición. Se seleccionó el \textbf{sensor infrarrojo fotoeléctrico E18-D80NK}, el cual ofrece un rango de detección ajustable, inmunidad a la luz solar moderada y entrega una señal digital limpia directamente a los pines del microcontrolador.
@@ -297,11 +332,40 @@ Para evitar que el modelo de \textit{TinyML} procese imágenes continuamente y s
 \subsubsection{Actividad 1.3: Diseño mecánico y ensamblaje profesional}
 Para garantizar una presentación técnica de alto nivel que prescinda por completo de obras civiles e instalaciones invasivas, el hardware no se presentará en placas de pruebas (protoboard). Todos los componentes se soldarán sobre una placa fenólica (baquelita perforada) o circuito impreso (PCB). Adicionalmente, se realizará el modelado CAD 3D de una carcasa y base estructural tipo tótem, la cual será fabricada mediante impresión 3D para alojar y proteger el microcontrolador, la cámara y la fuente de alimentación, logrando un aspecto profesional e industrial.
 
+\subsubsection{Actividad 1.4: Propuesta de escalabilidad energética (Sistema Fotovoltaico)}
+Como parte de la proyección de escalabilidad y autonomía del prototipo, se contempla la futura integración de un sistema de alimentación fotovoltaica. Aunque en la fase de Producto Mínimo Viable (MVP) el sistema operará con una fuente de alimentación de corriente continua estándar (5V/2A) debido a restricciones de tiempo y presupuesto, el diseño mecánico y estructural dejará la provisión física para un panel solar.
+
+Este enfoque de nodo autónomo (\textit{Off-Grid}) elimina la necesidad de realizar acometidas eléctricas y obras civiles en los puntos de acceso remotos de la universidad. Para el diseño en software CAD, se dimensionó un panel monocristalino de 20W ($450 \text{ mm} \times 350 \text{ mm} \times 25 \text{ mm}$). Este panel alimentaría un controlador de carga PWM acoplado a una batería de respaldo (por ejemplo, ácido-plomo de 12V 7Ah), garantizando la operación continua del microcontrolador y el sensor durante las horas nocturnas o de baja radiación. 
+
+Para reducir el voltaje de los 12V de la batería a los 5V requeridos por el ESP32-CAM, el circuito integrará un módulo reductor (Step-Down) LM2596. A continuación, en la Tabla \ref{tab:cotizacion_solar}, se presenta una proyección de costos estimada para esta mejora futura:
+
+\begin{table}[!ht]
+\centering
+\caption{Proyección de costos para escalabilidad con sistema fotovoltaico autónomo}
+\label{tab:cotizacion_solar}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}p{0.45\columnwidth} >{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\raggedright\arraybackslash\bfseries}X}
+\toprule
+Componente & Cantidad & Valor Unitario (COP) & Valor Total (COP) \\
+\midrule
+Panel Solar Monocristalino (20W, 12V) & 1 & \$ 85,000 & \$ 85,000 \\
+Controlador de Carga Solar (PWM 10A) & 1 & \$ 35,000 & \$ 35,000 \\
+Batería Seca Recargable (12V, 7Ah) & 1 & \$ 65,000 & \$ 65,000 \\
+Módulo Reductor Step-Down LM2596 & 1 & \$ 8,000 & \$ 8,000 \\
+Estructura de fijación y cableado & 1 & \$ 25,000 & \$ 25,000 \\
+\midrule
+\multicolumn{3}{r}{\textbf{Costo Total Estimado}} & \textbf{\$ 218,000} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
 \subsection{Fase 2: Modelado TinyML y Etapa de Señalización}
 En esta etapa se desarrolla el núcleo inteligente del sistema, el entrenamiento de la red neuronal y su capacidad de accionar el entorno físico tras una lectura exitosa.
 
-\subsubsection{Actividad 2.1: Minería de datos y estructuración del \textit{dataset}}
-El entrenamiento de un modelo robusto de detección de objetos exige un volumen de datos significativo. Se establece como meta la consolidación de un \textit{corpus} mínimo de \textbf{2000 imágenes}. Este \textit{dataset} se construirá combinando minería de imágenes en internet (repositorios públicos y motores de búsqueda para captar placas con formato latinoamericano) junto con una muestra de capturas locales tomadas en la Sede Centro de la ETITC. Esto permitirá aplicar técnicas de aprendizaje por transferencia (\textit{Transfer Learning}) adaptadas a la iluminación y geometría real del prototipo.
+\subsubsection{Actividad 2.1: Estrategia de curaduría y minería de datos masivos}
+Para alcanzar la meta de \textbf{2000 imágenes focalizadas}, se implementará una estrategia de curaduría de datos multivariante. Según la investigación documental realizada, se priorizará la extracción de información de repositorios especializados como Zenodo \parencite{zenodo2026} y Kaggle, así como el uso de técnicas de \textit{Web Scraping} en bases de datos de tránsito regionales \parencite{alam2023survey}. 
+
+Un componente innovador de esta fase será la inclusión de \textbf{Datos Sintéticos}. Se utilizarán generadores de placas basados en algoritmos de aprendizaje profundo, como los modelos de difusión y generadores sintéticos disponibles en plataformas de desarrollo colaborativo \parencite{githubAdil2026}, para crear variaciones tipográficas y geométricas que emulen con precisión el estándar de las motocicletas en Colombia. Este enfoque de ``Aumento de Datos" (\textit{Data Augmentation}) es fundamental para robustecer la red neuronal ante condiciones de baja visibilidad, oclusiones parciales y diversos ángulos de inclinación, garantizando una precisión superior al 90\% en la inferencia final ejecutada en el borde.
 
 \subsubsection{Actividad 2.2: Entrenamiento y optimización en Edge Impulse}
 Se empleará la plataforma \textit{Edge Impulse} para etiquetar las imágenes y entrenar la red neuronal ligera. En esta actividad se aplicarán técnicas de cuantización (reduciendo los tensores de 32-bit flotante a 8-bit entero) para minimizar la huella de memoria (RAM y Flash) del modelo, garantizando que pueda ser exportado como una librería de C++ y ejecutado fluidamente en los limitados recursos del ESP32-CAM.
@@ -326,6 +390,54 @@ Se realizarán iteraciones de validación (mínimo 30 pruebas sistemáticas) uti
 
 \subsubsection{Actividad 4.2: Evaluación comparativa de eficiencia}
 Se calculará la estadística descriptiva de los tiempos de respuesta del prototipo automatizado. Estos datos se contrastarán matemáticamente contra los 21 a 45 segundos promedio que toma actualmente el procedimiento manual, permitiendo cuantificar la mejora porcentual en la eficiencia operativa del ingreso vehicular a la institución.
+
+% --- PRESUPUESTO DEL PROTOTIPO ---
+\section{Presupuesto del Prototipo}
+Para la ejecución del Producto Mínimo Viable (MVP), se ha diseñado un presupuesto optimizado que refleja la viabilidad económica del proyecto. A diferencia de los sistemas comerciales, este prototipo utiliza componentes de bajo costo y alta eficiencia. En la Tabla \ref{tab:presupuesto_mvp} se detallan los costos de los insumos principales:
+
+\begin{table}[!ht]
+\centering
+\caption{Presupuesto estimado para el prototipo funcional (MVP)}
+\label{tab:presupuesto_mvp}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}p{0.45\columnwidth} >{\centering\arraybackslash}X >{\centering\arraybackslash}X >{\raggedright\arraybackslash\bfseries}X}
+\toprule
+Componente & Cantidad & Valor Unitario & Valor Total \\
+\midrule
+Microcontrolador ESP32-CAM (con cámara) & 1 & \$ 45,000 & \$ 45,000 \\
+Sensor Infrarrojo E18-D80NK & 1 & \$ 22,000 & \$ 22,000 \\
+Módulo Relé de 1 canal (5V) & 1 & \$ 8,500 & \$ 8,500 \\
+Placa Fenólica y conectores & 1 & \$ 15,000 & \$ 15,000 \\
+Insumos Impresión 3D (Filamento PLA) & 1 & \$ 20,000 & \$ 20,000 \\
+Fuente de poder 5V/2A & 1 & \$ 18,000 & \$ 18,000 \\
+\midrule
+\multicolumn{3}{r}{\textbf{Inversión Total Prototipo}} & \textbf{\$ 128,500} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% --- CRONOGRAMA ---
+\section{Cronograma de Actividades}
+El desarrollo del proyecto se proyecta en un periodo de 8 semanas, distribuidas para cubrir desde la adquisición de datos hasta la validación final. La Tabla \ref{tab:cronograma} muestra la distribución temporal de las fases metodológicas:
+
+\begin{table}[!ht]
+\centering
+\caption{Cronograma de ejecución del proyecto (Semanas)}
+\label{tab:cronograma}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\columnwidth}{X | c | c | c | c | c | c | c | c}
+\toprule
+\textbf{Actividad / Semana} & \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5} & \textbf{6} & \textbf{7} & \textbf{8} \\
+\midrule
+A1. Diseño de Hardware y 3D & X & X & & & & & & \\
+A2. Recolección de imágenes (2000) & & X & X & X & & & & \\
+A3. Entrenamiento en Edge Impulse & & & & X & X & & & \\
+A4. Programación y Trazabilidad local & & & & & X & X & & \\
+A5. Ensamblaje en PCB y Carcasa & & & & & & X & X & \\
+A6. Pruebas y Evaluación final & & & & & & & X & X \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 % --- BIBLIOGRAFÍA ---
 \newpage
