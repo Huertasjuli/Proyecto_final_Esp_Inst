@@ -1,0 +1,334 @@
+\documentclass[12pt, letterpaper]{article}
+
+% --- IDIOMA, FUENTES Y MÁRGENES (APA 7) ---
+\usepackage[spanish, es-noquoting]{babel}
+\addto\captionsspanish{
+  \renewcommand{\tablename}{Tabla}
+  \renewcommand{\listtablename}{Índice de Tablas}
+}
+
+\usepackage[margin=2.54cm]{geometry} % Márgenes APA
+
+% --- INTERLINEADO Y SANGRÍA (APA 7) ---
+\usepackage{setspace}
+\doublespacing
+\usepackage{indentfirst}
+\setlength{\parindent}{1.27cm}
+\setlength{\parskip}{0pt}
+
+% --- BIBLIOGRAFÍA (APA 7) ---
+\usepackage{csquotes} 
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber]{biblatex}
+\addbibresource{referencias.bib} % Tu archivo de referencias
+
+% --- FORMATO DE TÍTULOS (APA 7 - SIN NUMERACIÓN) ---
+\setcounter{secnumdepth}{0} % Apaga la numeración automática de LaTeX
+
+\usepackage{titlesec}
+% Nivel 1: Centrado y Negrita
+\titleformat{\section}[block]{\normalfont\Large\bfseries\centering}{}{0pt}{}
+% Nivel 2: Alineado a la izquierda y Negrita
+\titleformat{\subsection}[block]{\normalfont\large\bfseries}{}{0pt}{}
+% Nivel 3: Alineado a la izquierda, Negrita y Cursiva con punto al final
+\titleformat{\subsubsection}[runin]{\normalfont\normalsize\bfseries\itshape}{}{0pt}{}[.]
+
+% --- PAQUETES PARA TABLAS Y FIGURAS ---
+\usepackage{tabularx} % Para que la tabla se ajuste al ancho de la página
+\usepackage{booktabs} % Para las líneas horizontales bonitas de APA
+\usepackage{float}    % Para que el [H] fije la tabla en su lugar
+\usepackage{graphicx} % Permite insertar imágenes
+
+% =========================================================
+% AQUÍ EMPIEZA EL DOCUMENTO (Nada de texto antes de esto)
+% =========================================================
+\begin{document}
+
+% --- PORTADA ETITC (Centrada y manual) ---
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    
+    {\Large \textbf{Sistema Automatizado de Control Vehicular Basado en TinyML y Edge Computing para la Sede Tintal de la ETITC}\par}
+    
+    \vspace{4cm}
+    
+    {\large \textbf{Ing. Laura Juliana Huertas Huertas}\\
+    \textbf{Ing. Hernán Camilo Guerrero Forero}\par}
+    
+    \vspace{3cm}
+    
+    {\large Asesor:\\
+    \textbf{Ing. }\par}
+    
+    \vfill
+    
+    {\large Escuela Tecnológica Instituto Técnico Central\\
+    Especialización en Instrumentación Industrial\\
+    Proyecto Integrador II\\
+    Bogotá D.C.\\
+    2026\par}
+\end{titlepage}
+
+% --- RESUMEN ---
+\newpage
+\section*{Resumen}
+El presente proyecto propone el diseño e implementación de un sistema automatizado de ingreso y salida vehicular en la sede Tintal de la ETITC, basado en el uso de redes neuronales ligeras ejecutadas en el borde (Edge Computing / TinyML). Actualmente, el proceso de control se realiza de forma manual, generando demoras y limitada trazabilidad. La propuesta busca desarrollar un prototipo funcional sobre un sistema embebido, capaz de reconocer placas vehiculares mediante una red neuronal ligera optimizada para microcontrolador. Esto reducirá los tiempos de ingreso y fortalecerá la confiabilidad del sistema sin recurrir a infraestructura costosa.
+
+\vspace{0.5cm}
+\noindent \textbf{Palabras clave:} TinyML, Edge Computing, control vehicular, microcontroladores, automatización.
+
+% --- INTRODUCCIÓN ---
+\newpage
+
+% --- ÍNDICES AUTOMÁTICOS ---
+\newpage
+\tableofcontents % Genera la Tabla de Contenido
+\newpage
+\listoffigures % Genera el Índice de Figuras
+\newpage
+\listoftables % Genera el Índice de Tablas
+\newpage
+
+\section{Introducción}
+
+El aumento constante del parque automotor a nivel global ha generado nuevos desafíos en la gestión de accesos y estacionamientos institucionales. La carencia de sistemas eficientes de control provoca congestión, tiempos de espera prolongados y dificultades logísticas, problemáticas que suelen enfrentarse mediante infraestructura automatizada de alto costo o personal operativo permanente, limitando su viabilidad en entornos con restricciones presupuestales \parencite{alam2023survey}. A este escenario se suma la inminente transición hacia la movilidad eléctrica, la cual exige que las infraestructuras universitarias modernicen sus accesos como paso habilitador hacia la consolidación de campus inteligentes \parencite{leurent2011mobility, efthymiou2017ev, subash2025ev}.
+
+En el ámbito educativo, los sistemas tradicionales —basados en verificación manual o mecanismos electromecánicos convencionales— generan cuellos de botella críticos. De acuerdo con la literatura sobre flujos de tránsito, la validación manual introduce una alta variabilidad en el tiempo de servicio, produciendo filas que pueden oscilar entre uno y cinco minutos por vehículo en horas pico, afectando directamente la puntualidad académica y la eficiencia del recinto \parencite{fhwa_traffic_2017}.
+
+Para mitigar estas deficiencias, diversas investigaciones han explorado tecnologías emergentes. \textcite{celaya2020fog} propusieron un sistema descentralizado basado en \textit{fog computing} para procesar datos cerca de la fuente, reduciendo la latencia; mientras que \textcite{marshoodulla2024sdiotpark} desarrollaron un marco de análisis mediante IoT para la gestión dinámica del flujo. No obstante, como señalan \textcite{alam2023survey}, estas soluciones presentan serias limitaciones de escalabilidad económica al depender de servidores dedicados y conectividad constante.
+
+A nivel regional, implementaciones como el sistema RFID de \textcite{olivares2011rfid} o el reconocimiento de placas propuesto por \textcite{valeo2020patentes} en Argentina demostraron la efectividad de la automatización, pero ratificaron que la dependencia de cámaras industriales o infraestructura física robusta sigue siendo una barrera de adopción para instituciones públicas. 
+
+En contraste, investigaciones recientes como la de \textcite{zheng2025iot} evidencian que las arquitecturas de redes neuronales ligeras pueden ejecutarse eficientemente en dispositivos de recursos restringidos, reduciendo drásticamente el consumo energético y la inversión requerida. 
+
+A partir de esta revisión, se identifica una brecha tecnológica: la ausencia de propuestas orientadas a entornos educativos que integren reconocimiento automático de placas mediante modelos de aprendizaje automático ligero ejecutados directamente en microcontroladores (\textit{Edge Computing}), eliminando la dependencia de servidores externos.
+
+En respuesta a esta necesidad, el presente proyecto desarrolla un sistema automatizado de control vehicular basado en \textit{TinyML} para la sede Tintal de la ETITC. El sistema ejecuta la inferencia directamente en un dispositivo embebido con cámara integrada, gestionando una lista de autorización local para generar una señal de acceso inmediata. Con esta implementación, se busca demostrar la viabilidad técnica de la inteligencia artificial en el borde para optimizar los tiempos de ingreso y la trazabilidad, ofreciendo una solución escalable y económicamente sostenible.
+
+% --- JUSTIFICACIÓN ---
+\section{Justificación}
+
+El proceso actual de control vehicular en la sede Tintal de la ETITC opera mediante verificación manual de documentos, lo que genera congestión en horas pico y una total ausencia de registros históricos. La literatura advierte que la dependencia exclusiva de la intervención humana en procesos administrativos incrementa la probabilidad de error y anula la trazabilidad institucional. Al respecto, \textcite{macias1996acceso} documenta que la digitalización es el único mecanismo efectivo para mitigar fallas operativas y garantizar un flujo de información constante. En el contexto educativo, \textcite{oloriz2022certificacion} demostraron que la automatización de procesos universitarios democratiza la disponibilidad de la información, permitiendo auditorías y decisiones estratégicas basadas en datos reales y no en suposiciones.
+
+Si bien existen múltiples investigaciones que proponen optimizar el control vehicular mediante IoT y \textit{fog computing} —como el sistema de parqueo inteligente implementado por \textcite{celaya2020fog}, el cual reduce la latencia procesando los datos cerca de la fuente—, estas arquitecturas presentan una barrera crítica para su adopción en instituciones de educación pública: el costo de implementación y mantenimiento.
+
+En su revisión exhaustiva sobre sistemas inteligentes de parqueo, \textcite{alam2023survey} concluyen que el principal obstáculo para la masificación tecnológica es el alto costo de infraestructura. Un sistema comercial estándar de reconocimiento de placas (LPR) requiere cámaras industriales y servidores dedicados, lo que implica una inversión inicial que oscila entre los \$2,000 y \$4,000 USD por punto de acceso, sumado a los gastos recurrentes de licenciamiento de software y mantenimiento especializado. Para una institución con recursos limitados, esta carga financiera resulta insostenible.
+
+Por otro lado, las soluciones basadas en identificación por radiofrecuencia (RFID), analizadas por \textcite{olivares2011rfid}, presentan un desafío logístico y económico diferente centrado en el usuario. Aunque la inversión en lectoras es alta, el verdadero problema radica en los \textit{tags} o tarjetas de acceso, cuyo costo oscila entre \$2 y \$5 USD por unidad. En un entorno universitario caracterizado por una población estudiantil rotativa, la gestión, reposición por pérdida y entrega continua de miles de tarjetas genera un gasto operativo (OPEX) recurrente que desborda los presupuestos de bienestar universitario.
+
+Frente a este escenario de costos prohibitivos, tecnologías emergentes como \textit{TinyML} permiten ejecutar modelos de inteligencia artificial directamente en microcontroladores de bajo costo (inferiores a \$50 USD). \textcite{warden2020tinyml} demuestran que es posible realizar inferencias de modelos complejos en estos dispositivos sin necesidad de conexión a servidores externos. Esto valida los hallazgos de \textcite{zheng2025iot}, quienes lograron un reconocimiento vehicular eficiente eliminando la dependencia de la nube. Al procesar las imágenes localmente mediante \textit{Edge Computing}, se suprimen los costos asociados a servidores, se minimiza el consumo de ancho de banda y se evita la adquisición de hardware industrial \parencite{satyanarayanan2017edge}.
+
+Por consiguiente, implementar un sistema de control vehicular mediante \textit{TinyML} y \textit{Edge Computing} representa una alternativa técnicamente robusta y económicamente sostenible para la ETITC. Esta solución proyecta reducir la inversión inicial en más de un 90\% respecto a las alternativas comerciales, automatiza el proceso sin generar costos recurrentes por usuario y garantiza una trazabilidad total del acceso vehicular.
+
+% --- DEFINICÓN DEL PROBLEMA ---
+\section{Planteamiento del Problema}
+
+En la sede Tintal de la Escuela Tecnológica Instituto Técnico Central (ETITC), el control de ingreso y salida vehicular se realiza mediante verificación manual de documentos por parte del personal de seguridad. Este procedimiento exige que cada vehículo se detenga por completo mientras se valida la identidad del conductor y su respectiva autorización. Dicha dinámica incrementa exponencialmente los tiempos de espera y genera congestión en los accesos durante las franjas horarias de mayor afluencia, ocasionando filas que impactan el inicio de las actividades académicas.
+
+A falta de instrumentación previa en el sitio, se ha realizado una modelización teórica del sistema manual fundamentada en los estándares de la \textit{Federal Highway Administration} (FHWA) y en estudios de flujo vehicular universitario \parencite{fhwa_traffic_2017, aljaleel2022traffic}. Según estos referentes, el ciclo de validación manual (que incluye la detención, interacción con el guarda, búsqueda del documento y registro) consume un tiempo de servicio promedio ($\mu$) de entre 21 y 45 segundos por vehículo.
+
+Bajo un modelo de teoría de colas M/M/1, esto implica que el sistema manual posee una capacidad máxima teórica de apenas 2 vehículos por minuto. En horas pico, donde la tasa de llegada ($\lambda$) supera esta capacidad (e.g., $\lambda > 2.5$ vehículos/minuto), el factor de utilización del sistema ($\rho$) excede el 100\%. Este desbordamiento explica matemáticamente la formación de colas infinitas y la inestabilidad operativa observada en la sede Tintal. A esto se suma que la fatiga operativa del personal, derivada de la verificación visual continua, incrementa la probabilidad de error y vulnera la seguridad del recinto \parencite{aamva_alpr_2021}.
+
+Experiencias documentadas evidencian que los procesos de validación estrictamente manuales en accesos institucionales generan ineficiencias operativas crónicas, carecen de trazabilidad y dependen de forma absoluta de la intervención humana \parencite{macias1996acceso, oloriz2022certificacion}. Al carecer de registros históricos digitalizados, la institución pierde la capacidad de realizar análisis de gestión o auditorías de seguridad.
+
+En años recientes, múltiples investigaciones han demostrado que la automatización de estacionamientos mediante el Internet de las Cosas (IoT), \textit{fog computing} o sistemas RFID mejora sustancialmente la gestión de los accesos \parencite{celaya2020fog, marshoodulla2024sdiotpark, olivares2011rfid}. Sin embargo, estas soluciones presentan barreras de adopción críticas para las instituciones educativas públicas, tales como altas inversiones en infraestructura física, dependencia de servidores externos y necesidad de adecuaciones civiles o cableado especializado \parencite{alam2023survey, valeo2020patentes}.
+
+En contraste, tecnologías emergentes como las \textit{redes neuronales ligeras} habilitan la ejecución de modelos de inteligencia artificial directamente en microcontroladores de bajo costo, eliminando la necesidad de procesamiento centralizado \parencite{zheng2025iot}. Esta capacidad contrasta fuertemente con los sistemas LPR existentes que exigen servidores dedicados o cámaras industriales, los cuales inflan los costos y bloquean su implementación en contextos académicos con restricciones presupuestales \parencite{alam2023survey}.
+
+A partir de este diagnóstico técnico y matemático, se identifican las siguientes limitaciones críticas en el proceso actual de la sede Tintal:
+
+\begin{itemize}
+    \item \textbf{Ineficiencia operativa:} El tiempo de servicio manual ($\mu$) provoca una saturación del sistema ($\rho > 100\%$) y congestión en los accesos.
+    \item \textbf{Ausencia de trazabilidad:} La inexistencia de un registro digital impide el análisis estadístico y la toma de decisiones basada en datos.
+    \item \textbf{Vulnerabilidad humana:} El proceso está sujeto a tiempos de validación altamente variables y a errores por fatiga visual del operador.
+\end{itemize}
+
+Lo anterior evidencia la necesidad imperativa de un sistema automatizado de validación vehicular que reduzca los tiempos de ingreso, minimice la intervención humana y garantice la trazabilidad de los accesos, todo ello estructurado sobre una arquitectura tecnológicamente viable y económicamente sostenible para la ETITC.
+
+% --- OBJETIVOS ---
+\section{Objetivos y Pregunta de Investigación}
+
+\subsection{Objetivo General}
+Desarrollar un sistema automatizado de ingreso y salida de vehículos automotores en el parqueadero universitario de la sede Tintal de la ETITC, basado en reconocimiento de placas mediante modelos de \textit{redes neuronales ligeras} desplegados sobre \textit{Sistemas Embebidos}, mediante redes de sensores y sistemas electrónicos de potencia, con el propósito de optimizar el control de ingreso y salida vehicular, mejorar la trazabilidad de los registros y reducir la dependencia de procedimientos manuales.
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+    \item Implementar un sistema de validación de credenciales vehiculares y estudiantiles mediante redes de sensores y modelos de \textit{redes neuronales ligeras} ejecutados en dispositivos embebidos.
+    \item Desplegar un modelo de reconocimiento de placas vehiculares capaz de operar con baja latencia, mediante procesamiento local en el dispositivo y capaz de activar un actuador mediante sistemas electrónicos de potencia.
+    \item Diseñar un módulo de gestión de trazabilidad que permita almacenar, consultar y analizar los registros de ingreso y salida de vehículos de forma segura y confiable.
+\end{itemize}
+
+\subsection{Pregunta de Investigación}
+¿De qué manera un sistema embebido basado en redes neuronales ligeras y Edge Computing puede mejorar la eficiencia y trazabilidad del control vehicular en la sede Tintal de la ETITC, reduciendo los costos de infraestructura respecto a los métodos tradicionales?
+
+\section{Marco Teórico}
+
+\subsection{Sistemas de Parqueo Inteligente (Smart Parking)}
+Los sistemas de parqueo inteligente son soluciones tecnológicas orientadas a optimizar el uso de espacios de estacionamiento mediante la automatización del proceso de monitoreo, detección y gestión de disponibilidad. Su objetivo es reducir la búsqueda de espacios, descongestionar zonas urbanas y disminuir el consumo de combustible asociado a la circulación sin destino \parencite{alam2023survey}. Según \textcite{alam2023survey}, los sistemas de parqueo inteligente combinan sensores, conectividad IoT y analítica de datos para gestionar el flujo vehicular en tiempo real.
+
+\textcite{celaya2020fog} proponen un sistema de parqueo inteligente basado en \textit{fog computing}, demostrando que el procesamiento cercano al usuario reduce el tiempo de respuesta frente a soluciones dependientes exclusivamente de servidores en la nube. \textcite{marshoodulla2024sdiotpark} complementan esta visión con un enfoque SDN-IoT, donde el flujo de datos se controla dinámicamente, mejorando la eficiencia del sistema.
+
+\subsection{Fog Computing y Edge Computing}
+El \textit{fog computing} es una arquitectura distribuida que permite procesar datos cerca de su origen, en lugar de enviarlos a servidores remotos. \textcite{celaya2020fog} demuestran que esta arquitectura reduce la latencia, minimiza la congestión en la red y mejora el rendimiento de aplicaciones IoT en tiempo real. Mientras que la nube requiere enviar información a un servidor central, el \textit{fog computing} utiliza nodos intermedios que permiten decisiones más rápidas y eficientes.
+
+El \textit{edge computing} comparte el principio de procesamiento local, pero lo enfoca directamente en el dispositivo final (sensores, cámaras o microcontroladores). Según \textcite{zheng2025iot}, la ejecución de modelos de visión artificial directamente en el borde reduce el flujo de datos transmitidos y disminuye los costos operativos al eliminar infraestructura de servidores centralizados.
+
+\subsection{Visión por Computador}
+La visión por computador es una rama de la inteligencia artificial cuyo propósito es permitir que una máquina interprete información visual del entorno —imágenes o video— y tome decisiones basadas en dicha interpretación. Aplicada a sistemas de parqueo inteligente, permite identificar objetos (vehículos), reconocer estados (espacio ocupado o libre) y ejecutar acciones automatizadas en consecuencia.
+
+\textcite{zheng2025iot} implementaron redes neuronales ligeras para clasificación de imágenes en sistemas de estacionamiento, demostrando que es posible realizar procesamiento en tiempo real incluso en hardware embebido.
+
+\subsection{TinyML y Redes Neuronales Ligeras}
+TinyML es una disciplina que permite ejecutar modelos de aprendizaje automático en microcontroladores y dispositivos de bajo consumo energético. De acuerdo con \textcite{tinyml2022EdgeImpulse}, el uso de TinyML reduce la necesidad de transmitir datos hacia la nube, disminuyendo costos y aumentando la seguridad de los datos.
+
+Edge Impulse provee herramientas para entrenar modelos y exportarlos directamente a microcontroladores sin necesidad de infraestructura de cómputo avanzada \parencite{edgeimpulseDocs}. Esta capacidad permite desarrollar prototipos funcionales en contextos académicos con recursos limitados.
+
+\subsection{Microcontroladores en Automatización}
+Los microcontroladores son dispositivos electrónicos programables diseñados para controlar sistemas embebidos. Su uso en automatización educativa ha sido ampliamente estudiado. \textcite{candelas2015arduino} muestran que plataformas basadas en microcontroladores facilitan el aprendizaje de robótica, control y electrónica en entornos formativos, permitiendo la experimentación práctica a bajo costo. Su integración con sensores y actuadores hace viable el desarrollo de sistemas automáticos que reaccionen a condiciones detectadas mediante visión artificial.
+
+\subsection{Impresión 3D en Prototipado Rápido}
+La fabricación aditiva en impresión 3D permite desarrollar prototipos físicos de manera rápida y económica. Esta metodología reduce los tiempos de iteración en diseño y evita los costos de manufactura tradicional, lo que resulta ideal para proyectos de automatización que requieren ajustes frecuentes en componentes mecánicos.
+
+% --- ESTADO DEL ARTE ---
+\section{Estado del Arte}
+El estado del arte reúne las soluciones y enfoques más relevantes en automatización de accesos vehiculares, con especial atención en arquitecturas de computación distribuida (cloud, fog, edge), sistemas comerciales de parqueo y las últimas aportaciones en TinyML para ejecución en dispositivos embebidos.
+
+\subsection{Arquitecturas de Procesamiento: Cloud, Fog y Edge}
+Las arquitecturas basadas en la nube (cloud) concentran el procesamiento en centros remotos, ofreciendo alta capacidad de cómputo y almacenamiento, pero fomentando dependencia de conectividad, aumento de latencia y mayor tráfico de red. Frente a esto, el \textit{fog computing} propone nodos intermedios que procesan datos cerca de la fuente y reducen la latencia y el tráfico hacia la nube \parencite{bonomi2012fog, celaya2020fog}. \textcite{celaya2020fog} evidencian que el \textit{fog computing} es efectivo en aplicaciones de parqueo inteligente al mejorar la capacidad de respuesta en escenarios con múltiples puntos de adquisición.
+
+Por su parte, el \textit{edge computing} lleva el procesamiento aún más cerca del extremo —en el propio dispositivo o en su entorno inmediato—, lo que permite inferencias en tiempo real y reduce la necesidad de ancho de banda. \textcite{satyanarayanan2017edge} y \textcite{zheng2025iot} describen cómo la ejecución de modelos en el borde disminuye costos operativos asociados al envío continuo de datos a servidores centrales, y es adecuada para aplicaciones de visión por computador con requisitos de baja latencia.
+
+\subsection{Sistemas Comerciales y Propuestas Académicas de Parqueo Inteligente}
+La literatura documenta múltiples implementaciones que usan sensores, RFID, cámaras y plataformas IoT para la gestión de parqueos. \textcite{alam2023survey} realizan una revisión amplia y concluyen que las soluciones actuales combinan sensores de ocupación, análisis en la nube y \textit{dashboards} para administración, aunque resaltan como desafío principal los costos de infraestructura y el mantenimiento a escala. \textcite{olivares2011rfid} muestra un despliegue basado en RFID que exige lectoras y etiquetas por vehículo, lo cual incrementa el costo por plaza. \textcite{valeo2020patentes} describen sistemas de reconocimiento de matrículas basados en cámaras industriales que, aunque efectivos en precisión, presentan barreras de adopción por su costo y necesidad de calibración y mantenimiento continuo.
+
+En el ámbito académico, \textcite{celaya2020fog} y \textcite{marshoodulla2024sdiotpark} proponen arquitecturas distribuidas (fog/SDN-IoT) para gestionar datos y optimizar respuesta. Estas propuestas prueban mejoras en latencia y control del flujo; sin embargo, siguen ancladas a infraestructuras que requieren inversión elevada.
+
+\subsection{TinyML, Edge Impulse y Avances en IA Embebida}
+La aparición de TinyML ha permitido ejecutar modelos de aprendizaje automático en microcontroladores de bajo costo, habilitando aplicaciones de visión y clasificación directamente en el dispositivo. \textcite{warden2020tinyml} presentan las bases de TinyML y muestran cómo modelos cuantizados pueden correr en hardware con memoria y potencia limitadas. Estudios recientes \parencite{tinyml2022EdgeImpulse, zheng2025iot} muestran implementaciones de reconocimiento vehicular y clasificación utilizando redes ligeras, validando su viabilidad en entornos embebidos.
+
+Edge Impulse ofrece un flujo de trabajo práctico para TinyML: adquisición de datos, entrenamiento automático y exportación a microcontroladores, reduciendo el tiempo de desarrollo y la necesidad de conocimientos expertos en optimización de modelos \parencite{edgeimpulseDocs}. Investigaciones aplicadas respaldan su eficacia en escenarios reales y educativos, facilitando la transición desde prototipo a despliegue embebido \parencite{tinyml2022EdgeImpulse}.
+
+Complementando lo anterior, \textcite{hossain2020embeddedml} destaca que la integración de \textit{Embedded Machine Learning} es el futuro de las aplicaciones IoT sostenibles. Estudios de \textcite{nguyen2023edge} validan específicamente esta arquitectura para el reconocimiento de placas, reportando tasas de precisión superiores al 90\% y latencias inferiores a 200 ms ejecutando modelos ligeros en dispositivos de borde.
+
+\subsection{Limitaciones Identificadas en el Estado del Arte}
+A partir de la revisión, se identifican limitaciones repetidas en la literatura:
+\begin{itemize}
+    \item \textbf{Costos de infraestructura:} Soluciones basadas en cámaras industriales, servidores y sistemas RFID aumentan el costo por plaza y complican la escalabilidad \parencite{alam2023survey, olivares2011rfid, valeo2020patentes}.
+    \item \textbf{Dependencia de conectividad:} Arquitecturas cloud pierden eficacia en escenarios con conectividad limitada o con alto volumen de eventos en tiempo real \parencite{bonomi2012fog}.
+    \item \textbf{Mantenimiento y calibración:} Equipos de visión especializados requieren calibración y mantenimiento regular, elevando costos operativos \parencite{valeo2020patentes}.
+    \item \textbf{Brecha en entornos educativos:} Pocas propuestas están diseñadas para instituciones con recursos limitados; muchas se centran en entornos de alto presupuesto \parencite{alam2023survey}.
+\end{itemize}
+
+\subsection{Cómo se Posiciona el Presente Proyecto}
+El proyecto propuesto se posiciona en la intersección de \textit{Edge Computing} y \textit{TinyML} con un enfoque en replicabilidad y bajo costo para entornos educativos. La propuesta busca:
+\begin{itemize}
+    \item Ejecutar inferencia de reconocimiento de placas directamente en microcontroladores, reduciendo la necesidad de servidores o cámaras industriales \parencite{warden2020tinyml, zheng2025iot}.
+    \item Emplear plataformas accesibles (Edge Impulse) durante la fase inicial para acelerar el entrenamiento y validación sin incurrir en costos de licenciamiento \parencite{edgeimpulseDocs, tinyml2022EdgeImpulse}.
+    \item Diseñar una arquitectura modular y escalable que permita integrar distintos sensores y actuadores sin casarse con un proveedor específico.
+\end{itemize}
+
+\begin{table}[H]
+\centering
+\caption{Comparativa de enfoques de procesamiento en sistemas inteligentes de parqueo}
+\label{tab:comparativa}
+\renewcommand{\arraystretch}{1.5} % Mejor espaciado vertical
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash\bfseries}p{0.2\columnwidth} X X}
+\toprule
+Enfoque & Ventajas & Limitaciones \\
+\midrule
+Cloud & Gran capacidad de cómputo y almacenamiento; permite modelos complejos y análisis intensivo de datos. & Latencia alta, dependencia de la conectividad y costos operativos asociados a infraestructura en la nube \parencite{bonomi2012fog}. \\
+Fog & Procesamiento distribuido y reducción de latencia al ubicar nodos intermedios cerca del usuario \parencite{celaya2020fog}. & Requiere infraestructura adicional (nodos fog), lo que incrementa la inversión inicial \parencite{celaya2020fog}. \\
+Edge/TinyML & Inferencia en tiempo real en el dispositivo; bajo costo de infraestructura; mejora la privacidad al no enviar datos \parencite{zheng2025iot, warden2020tinyml}. & Limitaciones de memoria y capacidad de cómputo para modelos complejos; requiere optimización \parencite{zheng2025iot}. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\vspace{4mm}
+En síntesis, el estado del arte presenta soluciones robustas para diversas escalas, pero ninguna atiende de forma consolidada las restricciones económicas y de mantenimiento propias de muchas instituciones educativas. El presente proyecto busca cerrar esta brecha mediante la aplicación de TinyML y Edge Computing en una arquitectura modular.
+
+% --- DISEÑO METODOLÓGICO ---
+\section{Diseño Metodológico}
+
+\subsection{Enfoque Metodológico}
+La presente investigación se enmarca en un enfoque \textbf{cuantitativo de tipo aplicado}, con un diseño \textbf{cuasi-experimental} y alcance explicativo. El estudio consiste en el diseño, implementación y validación experimental de un prototipo funcional de control vehicular basado en redes neuronales ligeras desplegadas sobre un sistema embebido.
+
+El propósito metodológico es evaluar la viabilidad técnica de integrar modelos de \textit{TinyML} en un entorno real de operación, midiendo su impacto en términos de latencia, precisión y eficiencia operativa frente al procedimiento manual actualmente utilizado en la sede Tintal de la ETITC.
+
+\subsection{Variables del Estudio}
+\textbf{Variable Independiente:} Implementación de un sistema embebido basado en redes neuronales ligeras para reconocimiento automático de placas vehiculares.
+
+\textbf{Variables Dependientes:}
+\begin{itemize}
+    \item Tiempo promedio de validación vehicular (latencia del sistema).
+    \item Precisión del reconocimiento (porcentaje de aciertos en inferencia).
+    \item Generación correcta de señal digital de autorización hacia la etapa de potencia.
+    \item Reducción porcentual del tiempo de acceso respecto al método manual.
+\end{itemize}
+
+\subsection{Correspondencia entre Objetivos, Fases y Actividades}
+Para garantizar la trazabilidad del proyecto, el diseño metodológico se estructura en cuatro fases operativas. Cada fase agrupa una serie de actividades secuenciales diseñadas para dar cumplimiento estricto a los objetivos específicos planteados. La Tabla \ref{tab:metodologia} detalla esta alineación.
+
+\begin{table}[H]
+\centering
+\caption{Matriz de alineación metodológica: Objetivos, Fases y Actividades}
+\label{tab:metodologia}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabularx}{\columnwidth}{>{\raggedright\arraybackslash}p{0.3\columnwidth} >{\raggedright\arraybackslash}p{0.25\columnwidth} X}
+\toprule
+\textbf{Objetivo Específico} & \textbf{Fase Metodológica} & \textbf{Actividades Principales} \\
+\midrule
+1. Implementar validación mediante sensores y redes neuronales embebidas. & Fase 1: Diseño de Arquitectura y Hardware & A1.1 Selección del hardware embebido.\newline A1.2 Diseño de red de sensores de activación.\newline A1.3 Definición de parámetros de captura visual. \\
+2. Desplegar modelo de reconocimiento capaz de activar actuador de potencia. & Fase 2: Modelado TinyML y Potencia & A2.1 Recolección y preprocesamiento de imágenes.\newline A2.2 Entrenamiento del modelo en Edge Impulse.\newline A2.3 Integración de la etapa electrónica de potencia. \\
+3. Diseñar módulo de gestión de trazabilidad segura y confiable. & Fase 3: Trazabilidad Local & A3.1 Programación de lista blanca en memoria.\newline A3.2 Configuración del registro de accesos (logs). \\
+Validación general del sistema frente a variables dependientes. & Fase 4: Pruebas y Evaluación & A4.1 Ejecución de pruebas en entorno controlado.\newline A4.2 Análisis estadístico comparativo (vs. manual). \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Fase 1: Diseño de Arquitectura y Hardware}
+Esta fase abarca la estructuración física del prototipo, priorizando dispositivos que cumplan con las restricciones de procesamiento en el borde (\textit{Edge Computing}) y garantizando un acabado industrial.
+
+\subsubsection{Actividad 1.1: Selección de la plataforma embebida}
+Para garantizar la viabilidad del procesamiento de imágenes en el borde, se definieron criterios de evaluación específicos para visión artificial y redes neuronales, descartando parámetros de instrumentación convencional que no son críticos para este prototipo. Tras evaluar el costo, la memoria SRAM, el hardware de visión integrado y el soporte nativo para TinyML, se seleccionó el \textbf{ESP32-CAM} frente a alternativas como Arduino Nano 33 BLE y Raspberry Pi. Su integración nativa del sensor OV2640 y su compatibilidad total con \textit{Edge Impulse} lo consolidan como la plataforma idónea.
+
+\subsubsection{Actividad 1.2: Selección de la red de sensores de activación}
+Para evitar que el modelo de \textit{TinyML} procese imágenes continuamente y sature el microcontrolador, se requiere un sensor de proximidad que active la cámara únicamente cuando un vehículo esté en posición. Se seleccionó el \textbf{sensor infrarrojo fotoeléctrico E18-D80NK}, el cual ofrece un rango de detección ajustable, inmunidad a la luz solar moderada y entrega una señal digital limpia directamente a los pines del microcontrolador.
+
+\subsubsection{Actividad 1.3: Diseño mecánico y ensamblaje profesional}
+Para garantizar una presentación técnica de alto nivel que prescinda por completo de obras civiles e instalaciones invasivas, el hardware no se presentará en placas de pruebas (protoboard). Todos los componentes se soldarán sobre una placa fenólica (baquelita perforada) o circuito impreso (PCB). Adicionalmente, se realizará el modelado CAD 3D de una carcasa y base estructural tipo tótem, la cual será fabricada mediante impresión 3D para alojar y proteger el microcontrolador, la cámara y la fuente de alimentación, logrando un aspecto profesional e industrial.
+
+\subsection{Fase 2: Modelado TinyML y Etapa de Señalización}
+En esta etapa se desarrolla el núcleo inteligente del sistema, el entrenamiento de la red neuronal y su capacidad de accionar el entorno físico tras una lectura exitosa.
+
+\subsubsection{Actividad 2.1: Minería de datos y estructuración del \textit{dataset}}
+El entrenamiento de un modelo robusto de detección de objetos exige un volumen de datos significativo. Se establece como meta la consolidación de un \textit{corpus} mínimo de \textbf{2000 imágenes}. Este \textit{dataset} se construirá combinando minería de imágenes en internet (repositorios públicos y motores de búsqueda para captar placas con formato latinoamericano) junto con una muestra de capturas locales tomadas en la Sede Centro de la ETITC. Esto permitirá aplicar técnicas de aprendizaje por transferencia (\textit{Transfer Learning}) adaptadas a la iluminación y geometría real del prototipo.
+
+\subsubsection{Actividad 2.2: Entrenamiento y optimización en Edge Impulse}
+Se empleará la plataforma \textit{Edge Impulse} para etiquetar las imágenes y entrenar la red neuronal ligera. En esta actividad se aplicarán técnicas de cuantización (reduciendo los tensores de 32-bit flotante a 8-bit entero) para minimizar la huella de memoria (RAM y Flash) del modelo, garantizando que pueda ser exportado como una librería de C++ y ejecutado fluidamente en los limitados recursos del ESP32-CAM.
+
+\subsubsection{Actividad 2.3: Diseño de la etapa electrónica y señalización visual}
+Una vez el modelo genera una inferencia positiva (placa reconocida y validada), el microcontrolador debe interactuar con el mundo físico. Esta actividad consiste en el diseño de un circuito de acople que integre un indicador lumínico (LED de alta luminosidad). Este diodo actuará como semáforo y prueba física de validación, encendiéndose para simular la señal de paso o apertura de talanquera, lo que permitirá demostrar la funcionalidad total del sistema ante los evaluadores sin requerir actuadores mecánicos a gran escala.
+
+\subsection{Fase 3: Implementación del Módulo de Trazabilidad}
+Para dar respuesta a la necesidad de auditoría institucional sin depender de infraestructuras en la nube, se diseña un sistema de registro local.
+
+\subsubsection{Actividad 3.1: Configuración de lista blanca}
+Se programará una estructura de datos en la memoria local del dispositivo que contenga las credenciales (placas) autorizadas, garantizando que la validación ocurra en milisegundos sin latencia de red.
+
+\subsubsection{Actividad 3.2: Registro de eventos (Logs)}
+Se implementará una rutina que, tras cada evento de lectura, guarde un registro con el resultado de la inferencia, la placa detectada y la estampa de tiempo, almacenándolo en una memoria SD vinculada al sistema embebido.
+
+\subsection{Fase 4: Pruebas, Validación y Evaluación}
+La fase final consolida los resultados experimentales para responder a la pregunta de investigación.
+
+\subsubsection{Actividad 4.1: Pruebas en entorno controlado}
+Se realizarán iteraciones de validación (mínimo 30 pruebas sistemáticas) utilizando vehículos autorizados y no autorizados. Se documentarán variables como el nivel de confianza arrojado por el modelo, los falsos positivos/negativos y el tiempo de ejecución de la inferencia directamente en el puerto serial del microcontrolador.
+
+\subsubsection{Actividad 4.2: Evaluación comparativa de eficiencia}
+Se calculará la estadística descriptiva de los tiempos de respuesta del prototipo automatizado. Estos datos se contrastarán matemáticamente contra los 21 a 45 segundos promedio que toma actualmente el procedimiento manual, permitiendo cuantificar la mejora porcentual en la eficiencia operativa del ingreso vehicular a la institución.
+
+% --- BIBLIOGRAFÍA ---
+\newpage
+\printbibliography
+
+\end{document}
