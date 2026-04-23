@@ -30,9 +30,11 @@
 % --- PAQUETES DE TABLAS Y MATEMÁTICAS ---
 \usepackage{tabularx}
 \usepackage{booktabs}
-\usepackage{graphicx}
-\usepackage{amsmath}
+\usepackage{graphicx} % Para las fotos
+\usepackage{amsmath}  % Para que reconozca el comando \text en las medidas
+\usepackage{float}    % Para que el [H] fije la tabla en su lugar
 \usepackage{caption} % <--- EL SALVADOR DEL ERROR @makecaption
+\usepackage{longtable}
 
 % =========================================================
 % AQUÍ EMPIEZA EL DOCUMENTO 
@@ -232,7 +234,7 @@ El proyecto propuesto se posiciona en la intersección de \textit{Edge Computing
     \item Diseñar una arquitectura modular y escalable que permita integrar distintos sensores y actuadores sin casarse con un proveedor específico.
 \end{itemize}
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \caption{Comparativa de enfoques de procesamiento en sistemas inteligentes de parqueo}
 \label{tab:comparativa}
@@ -308,7 +310,7 @@ Se evaluaron tres alternativas tecnológicas utilizando una escala cuantitativa 
     \item \textbf{Eficiencia Energética:} Consumo de potencia para operar de forma autónoma.
 \end{itemize}
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \caption{Matriz de decisión para la selección de la plataforma embebida}
 \label{tab:matriz_decision}
@@ -339,7 +341,7 @@ Este enfoque de nodo autónomo (\textit{Off-Grid}) elimina la necesidad de reali
 
 Para reducir el voltaje de los 12V de la batería a los 5V requeridos por el ESP32-CAM, el circuito integrará un módulo reductor (Step-Down) LM2596. A continuación, en la Tabla \ref{tab:cotizacion_solar}, se presenta una proyección de costos estimada para esta mejora futura:
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \caption{Proyección de costos para escalabilidad con sistema fotovoltaico autónomo}
 \label{tab:cotizacion_solar}
@@ -391,6 +393,16 @@ Se realizarán iteraciones de validación (mínimo 30 pruebas sistemáticas) uti
 \subsubsection{Actividad 4.2: Evaluación comparativa de eficiencia}
 Se calculará la estadística descriptiva de los tiempos de respuesta del prototipo automatizado. Estos datos se contrastarán matemáticamente contra los 21 a 45 segundos promedio que toma actualmente el procedimiento manual, permitiendo cuantificar la mejora porcentual en la eficiencia operativa del ingreso vehicular a la institución.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\linewidth]{diagrama_flujo.png} 
+    \caption{Algoritmo lógico de reconocimiento y control de acceso.}
+    \label{fig:diagrama_flujo}
+    \vspace{2mm}
+    \small
+    \textit{Nota.} Elaboración propia (2026), en Lucidchart.
+\end{figure}
+
 % --- PRESUPUESTO DEL PROTOTIPO ---
 \section{Presupuesto del Prototipo}
 Para la ejecución del Producto Mínimo Viable (MVP), se ha diseñado un presupuesto optimizado que refleja la viabilidad económica del proyecto. A diferencia de los sistemas comerciales, este prototipo utiliza componentes de bajo costo y alta eficiencia. En la Tabla \ref{tab:presupuesto_mvp} se detallan los costos de los insumos principales:
@@ -404,14 +416,14 @@ Para la ejecución del Producto Mínimo Viable (MVP), se ha diseñado un presupu
 \toprule
 Componente & Cantidad & Valor Unitario & Valor Total \\
 \midrule
-Microcontrolador ESP32-CAM (con cámara) & 1 & \$ 45,000 & \$ 45,000 \\
+Microcontrolador ESP32-CAM (con cámara) & 1 & \$ 60,000 & \$ 60,000 \\
 Sensor Infrarrojo E18-D80NK & 1 & \$ 22,000 & \$ 22,000 \\
 Módulo Relé de 1 canal (5V) & 1 & \$ 8,500 & \$ 8,500 \\
 Placa Fenólica y conectores & 1 & \$ 15,000 & \$ 15,000 \\
 Insumos Impresión 3D (Filamento PLA) & 1 & \$ 20,000 & \$ 20,000 \\
 Fuente de poder 5V/2A & 1 & \$ 18,000 & \$ 18,000 \\
 \midrule
-\multicolumn{3}{r}{\textbf{Inversión Total Prototipo}} & \textbf{\$ 128,500} \\
+\multicolumn{3}{r}{\textbf{Inversión Total Prototipo}} & \textbf{\$ 143,500} \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -420,7 +432,7 @@ Fuente de poder 5V/2A & 1 & \$ 18,000 & \$ 18,000 \\
 \section{Cronograma de Actividades}
 El desarrollo del proyecto se proyecta en un periodo de 8 semanas, distribuidas para cubrir desde la adquisición de datos hasta la validación final. La Tabla \ref{tab:cronograma} muestra la distribución temporal de las fases metodológicas:
 
-\begin{table}[!ht]
+\begin{table}[H]
 \centering
 \caption{Cronograma de ejecución del proyecto (Semanas)}
 \label{tab:cronograma}
