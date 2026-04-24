@@ -10,3 +10,6 @@
 *.run.xml
 *.synctex.gz
 *.toc
+*.md
+*.gitignore
+*.bbl-SAVE-ERROR
