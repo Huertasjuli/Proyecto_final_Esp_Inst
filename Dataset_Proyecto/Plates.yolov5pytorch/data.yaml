@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['placas']
+
+roboflow:
+  workspace: julianas-workspace-wwqvv
+  project: julianas-workspace-wwqvv
+  version: dataset
+  license: Private
+  url: https://app.roboflow.com/julianas-workspace-wwqvv/julianas-workspace-wwqvv/dataset

@@ -362,15 +362,41 @@ Estructura de fijación y cableado & 1 & \$ 25,000 & \$ 25,000 \\
 \end{table}
 
 \subsection{Fase 2: Modelado TinyML y Etapa de Señalización}
-En esta etapa se desarrolla el núcleo inteligente del sistema, el entrenamiento de la red neuronal y su capacidad de accionar el entorno físico tras una lectura exitosa.
+En esta etapa se desarrolla el núcleo inteligente del sistema, abarcando la consolidación del conjunto de datos (\textit{dataset}), el entrenamiento de la red neuronal y la capacidad de accionar el entorno físico tras una lectura exitosa.
 
-\subsubsection{Actividad 2.1: Estrategia de curaduría y minería de datos masivos}
-Para alcanzar la meta de \textbf{2000 imágenes focalizadas}, se implementará una estrategia de curaduría de datos multivariante. Según la investigación documental realizada, se priorizará la extracción de información de repositorios especializados como Zenodo \parencite{zenodo2026} y Kaggle, así como el uso de técnicas de \textit{Web Scraping} en bases de datos de tránsito regionales \parencite{alam2023survey}. 
+\subsubsection{Actividad 2.1: Estrategia de curaduría y recolección de datos}
+Para el entrenamiento del modelo de visión artificial, se estructuró un conjunto de datos (\textit{dataset}) compuesto por 531 imágenes. Para garantizar la robustez de la red neuronal y evitar sesgos, se empleó una estrategia de recolección mixta:
+\begin{itemize}
+    \item \textbf{Imágenes de repositorio (80\% aprox.):} Se extrajeron alrededor de 430 imágenes etiquetadas desde el repositorio especializado Roboflow Universe (formato YOLOv5 PyTorch). Estas imágenes aportan variabilidad en tipografías, ángulos e iluminación.
+    \item \textbf{Imágenes propias (20\% aprox.):} Se capturaron cerca de 100 fotografías reales utilizando un dispositivo móvil de alta resolución. Estas imágenes fueron posteriormente redimensionadas por la plataforma para enseñar a la red a reconocer el entorno real y las texturas locales.
+\end{itemize}
 
-Un componente innovador de esta fase será la inclusión de \textbf{Datos Sintéticos}. Se utilizarán generadores de placas basados en algoritmos de aprendizaje profundo, como los modelos de difusión y generadores sintéticos disponibles en plataformas de desarrollo colaborativo \parencite{githubAdil2026}, para crear variaciones tipográficas y geométricas que emulen con precisión el estándar de las motocicletas en Colombia. Este enfoque de ``Aumento de Datos" (\textit{Data Augmentation}) es fundamental para robustecer la red neuronal ante condiciones de baja visibilidad, oclusiones parciales y diversos ángulos de inclinación, garantizando una precisión superior al 90\% en la inferencia final ejecutada en el borde.
+% Pega esto justo debajo del texto de la Actividad 2.1
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Data_acquisition.png} 
+    \caption{Interfaz de adquisición de datos en Edge Impulse mostrando el etiquetado (bounding boxes) de las placas de motocicletas.}
+    \label{fig:data_acquisition}
+    \vspace{2mm}
+    \small
+    \textit{Nota.} Captura del entorno de trabajo propio evidenciando el total de 531 ítems recolectados.
+\end{figure}
 
 \subsubsection{Actividad 2.2: Entrenamiento y optimización en Edge Impulse}
-Se empleará la plataforma \textit{Edge Impulse} para etiquetar las imágenes y entrenar la red neuronal ligera. En esta actividad se aplicarán técnicas de cuantización (reduciendo los tensores de 32-bit flotante a 8-bit entero) para minimizar la huella de memoria (RAM y Flash) del modelo, garantizando que pueda ser exportado como una librería de C++ y ejecutado fluidamente en los limitados recursos del ESP32-CAM.
+El procesamiento de los datos y la configuración del modelo de aprendizaje automático se ejecutaron mediante la plataforma \textit{Edge Impulse}. El flujo de trabajo (\textit{Impulse Design}) se configuró de la siguiente manera:
+\begin{itemize}
+    \item \textbf{Bloque de Imagen:} Las imágenes se redimensionaron a una resolución de 96x96 píxeles en escala de grises (\textit{Grayscale}). Esta decisión técnica es crucial para disminuir drásticamente el consumo de memoria RAM del microcontrolador sin perder los contrastes necesarios para leer una placa.
+    \item \textbf{Bloque de Detección de Objetos:} Se seleccionó la arquitectura \textbf{FOMO (Faster Objects, More Objects)}. Este algoritmo es altamente eficiente para dispositivos de borde, permitiendo detecciones rápidas con una huella de memoria mínima.
+\end{itemize}
+Finalmente, el modelo fue cuantizado (convirtiendo los pesos de punto flotante de 32 bits a enteros de 8 bits - Int8), lo que asegura que el archivo resultante sea lo suficientemente ligero para ejecutarse en el ESP32-CAM.
+
+% Pega esto justo debajo del texto de la Actividad 2.2
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Create_impulse.png} 
+    \caption{Configuración del bloque de procesamiento y detección de objetos (FOMO) optimizado para el microcontrolador.}
+    \label{fig:create_impulse}
+\end{figure}
 
 \subsubsection{Actividad 2.3: Diseño de la etapa electrónica y señalización visual}
 Una vez el modelo genera una inferencia positiva (placa reconocida y validada), el microcontrolador debe interactuar con el mundo físico. Esta actividad consiste en el diseño de un circuito de acople que integre un indicador lumínico (LED de alta luminosidad). Este diodo actuará como semáforo y prueba física de validación, encendiéndose para simular la señal de paso o apertura de talanquera, lo que permitirá demostrar la funcionalidad total del sistema ante los evaluadores sin requerir actuadores mecánicos a gran escala.
@@ -402,6 +428,47 @@ Se calculará la estadística descriptiva de los tiempos de respuesta del protot
     \small
     \textit{Nota.} Elaboración propia (2026), en Lucidchart.
 \end{figure}
+
+% --- RESULTADOS Y ANÁLISIS ---
+\section{Resultados Preliminares: Entrenamiento del Modelo TinyML}
+
+\subsection{Análisis de las métricas del modelo}
+Luego del proceso de diseño y entrenamiento en la plataforma Edge Impulse, el modelo de inteligencia artificial fue evaluado utilizando el conjunto de datos de validación (\textit{Validation Set}). Las métricas obtenidas con el modelo cuantizado (Int8), el cual es fundamental para garantizar su futura ejecución dentro de las restricciones de memoria del microcontrolador ESP32-CAM, son las siguientes:
+
+\begin{itemize}
+    \item \textbf{F1-Score:} 0.90 (90\%)
+    \item \textbf{Precisión (Precision):} 0.86 (86\%)
+    \item \textbf{Sensibilidad (Recall):} 0.94 (94\%)
+\end{itemize}
+
+% Pega esto en la sección de Resultados, después de la viñeta de Sensibilidad (Recall)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\linewidth]{Object_detection.png} 
+    \caption{Métricas de validación y matriz de confusión del modelo cuantizado (Int8).}
+    \label{fig:object_detection_metrics}
+    \vspace{2mm}
+    \small
+    \textit{Nota.} Se observa un F1-Score del 90.4\% y el consumo proyectado de memoria RAM (119.4K) que certifica su viabilidad para el ESP32-CAM.
+\end{figure}
+
+% Pega esto justo debajo de la figura de la matriz de confusión (Object_detection.jpg)
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{Training_graphs.png} 
+    \caption{Curva de pérdida (Loss) durante el entrenamiento de la red neuronal a lo largo de 60 épocas.}
+    \label{fig:training_loss}
+    \vspace{2mm}
+    \small
+    \textit{Nota.} La convergencia simultánea y estabilización de las curvas de entrenamiento y validación demuestra un aprendizaje estable, descartando el fenómeno de sobreajuste (overfitting).
+\end{figure}
+
+Para alcanzar estos resultados y mitigar el riesgo de sobreajuste (\textit{overfitting}), se implementó la técnica de \textit{Data Augmentation}. Esta estrategia consistió en aplicar ruido digital de forma aleatoria, variaciones de brillo y recortes (\textit{cropping}) a las imágenes originales, permitiendo que la red neuronal generalice las características geométricas de las placas ante diversas condiciones lumínicas.
+
+\subsection{Validación lógica y próximos pasos}
+Los resultados obtenidos en esta fase validan matemáticamente la arquitectura algorítmica del sistema. El F1-Score del 90\% demuestra que el modelo de detección de objetos (\textit{FOMO - Faster Objects, More Objects}) es viable para la tarea de reconocimiento vehicular utilizando imágenes de baja resolución.
+
+Como siguiente paso dentro de la ruta metodológica, se proyecta la fase de despliegue en el hardware (\textit{Deployment}). Esto consistirá en exportar el modelo cuantizado como una librería de C++ para ser integrado y ejecutado directamente en el microcontrolador ESP32-CAM. Una vez cargado el \textit{firmware}, se procederá a realizar las pruebas físicas de funcionamiento en tiempo real para medir variables como la latencia de inferencia y la correcta activación de la etapa electrónica de señalización.
 
 % --- PRESUPUESTO DEL PROTOTIPO ---
 \section{Presupuesto del Prototipo}
